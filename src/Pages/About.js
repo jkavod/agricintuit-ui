@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { Logo } from "../Assets";
-import {Footer, Nav } from '../UI'
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { AboutImage, Logo, ProactiveAI } from "../Assets";
+import { Footer, Nav } from "../UI";
 import "../UI/Style.css";
 
 const navigation = [
-  { name: 'Product', href: '#product-section' },
-  { name: 'Features', href: '#features-section' },
-  { name: 'Pricing', href: '#pricing-section' },
-  { name: 'Support', href: '#footer-section' },
-]
+  { name: "Product", href: "#product-section" },
+  { name: "Features", href: "#features-section" },
+  { name: "Pricing", href: "#pricing-section" },
+  { name: "Support", href: "#footer-section" },
+];
 
 export default function About() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <Nav />
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">AgricIntuit</span>
-                <img
-                  className="h-8 w-auto"
-                  src={Logo}
-                  alt="Logo"
-                />
+                <img className="h-8 w-auto" src={Logo} alt="Logo" />
               </a>
               <button
                 type="button"
@@ -73,8 +74,8 @@ export default function About() {
         </Dialog>
       </header>
 
-       {/* TERMS HERO SECTION */}
-       <div className="relative bg-gray-100">
+      {/* ABOUT HERO SECTION */}
+      <div className="relative bg-gray-100">
         <div className="absolute inset-x-0 bottom-0">
           <svg
             viewBox="0 0 224 12"
@@ -91,7 +92,8 @@ export default function About() {
               About Us
             </h2>
             <p className="mb-6 text-base font-normal tracking-wide text-green md:text-lg">
-            Welcome to our story! Discover the heart behind our journey and values in the 'About Us' section below.
+              Welcome to our story! Discover the heart behind our journey and
+              values in the 'About Us' section below.
             </p>
             <a
               href="#about"
@@ -110,7 +112,57 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      {/* ABOUT US */}
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+
+        <div className="grid gap-5 row-gap-8 lg:grid-cols-2" id="pres-farm">
+        <div className="flex items-center justify-center -mx-4 lg:pl-8">
+            <div>
+              <img
+                className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-none"
+                src={AboutImage}
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            className="flex flex-col justify-center sm:items-center"
+            id="pres-farm"
+          >
+            <div className="mb-6" id="text-sec">
+              {/* <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Precision Farming Revolution */}
+              {/* <br className="hidden md:block" />
+                  jumps over{" "}
+                  <span className="relative px-1">
+                    <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
+                    <span className="relative inline-block text-deep-purple-accent-400">
+                      a lazy dog
+                    </span>
+                  </span>
+                </h2> */}
+              <h1 className="mb-6 font-sans text-3xl font-bold  text-gray-900 sm:text-4xl">
+                AgricIntuit is a leading AgTech company revolutionizing the
+                agricultural industry with AI products to ensure a sustainable
+                future.
+              </h1>
+              <div className="lg:pr-20">
+                <p className="text-base text-justify text-gray-700 md:text-lg">
+                  We specialize in harnessing the power of Artificial
+                  Intelligence (AI) to craft solutions that drive businesses
+                  towards a brighter, more efficient future.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          
+        </div>
+      </div>
       <Footer />
     </div>
-  )
+  );
 }

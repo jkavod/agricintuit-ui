@@ -97,7 +97,7 @@ export default function Terms() {
               interacting with the product or service.
             </p>
             <a
-              href="#faqs"
+              href="#terms"
               aria-label="Scroll down"
               className="flex items-center justify-center w-10 h-10 mx-auto text-green duration-300 transform border border-green rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
             >
@@ -115,7 +115,7 @@ export default function Terms() {
       </div>
 
       {/* TERMS AND CONDITIONS SECTION */}
-      <div className="px-8 py-6 flex flex-col gap-3">
+      <div className="px-8 py-6 flex flex-col gap-3" id="terms">
         <section className="flex flex-col gap-3">
           {/* <h1 className="text-2xl">Terms and Conditions</h1> */}
           <p className="text-gray-500">Last updated: (13/11/2023)</p>

@@ -31,3 +31,4 @@ export { default as Yield } from "./yield.jpg";
 export { default as Linkedin } from "./linkedin.png";
 export { default as Twitter } from "./twitter.png";
 export { default as Ecoregions } from './ecoregions.png'
+export { default as AboutImage } from './about-img.jpg'

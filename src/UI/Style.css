@@ -99,6 +99,16 @@ li a {
  transition: opacity 300ms ease-in;
 }
 
+.lower-alpha-list {
+  list-style-type: none;
+}
+
+.lower-alpha-list:before {
+  content: counter(lower-alpha-counter, lower-alpha) ". ";
+  counter-increment: lower-alpha-counter;
+  counter-reset: lower-alpha-counter;
+}
+
 
 /* Mobile Responsiveness */
 @media (max-width: 800px) {

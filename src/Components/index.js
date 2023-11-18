@@ -1,0 +1,7 @@
+export { default as Statistics } from './Stats'
+export { default as Download } from './Download'
+export { default as Partners } from './Partners'
+export { default as CarouselScreenshot } from './AppScreenshot'
+export { default as Pricing } from './Pricing'
+export { default as CtaSection } from './CtaSection'
+export { default as Testimonials } from './Testimonial'

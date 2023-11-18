@@ -1,0 +1,322 @@
+.card {
+ padding: 100px;
+}
+
+.card:hover {
+ padding: 120px;
+}
+
+.features-sec {
+ margin: 200px 0;
+}
+
+/* @keyframes floatAnimation {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-10px);
+}
+100% {
+  transform: translateY(0);
+}
+} */
+
+/* Stats */
+.stats-container {
+ position: relative;
+ overflow: hidden;
+}
+
+.stats-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 1rem;
+ text-align: center;
+}
+
+.stat-item {
+ position: relative;
+ color: #149930;
+}
+
+.stat-value {
+ font-size: 5rem;
+ font-weight: bold;
+ color: #149930;
+ margin: 0;
+}
+
+.stat-label {
+ font-weight: bold;
+}
+
+li a {
+ position: relative;
+ text-decoration: none;
+}
+
+.underln a::before,
+.underln a::after {
+ content: "";
+ position: absolute;
+ width: 0;
+ height: 2px;
+ bottom: -5px;
+ background-color: #149930;
+ transition: all 0.3s ease;
+}
+
+.underln a::before {
+ left: 0;
+}
+
+.underln a::after {
+ right: 0;
+}
+
+.underln a:hover::before,
+.underln a:hover::after {
+ width: 50%;
+}
+
+/* Cookie */
+.cookie-banner-enter {
+ opacity: 0.01;
+}
+
+.cookie-banner-enter-active {
+ opacity: 1;
+ transition: opacity 300ms ease-in;
+}
+
+.cookie-banner-exit {
+ opacity: 1;
+}
+
+.cookie-banner-exit-active {
+ opacity: 0.01;
+ transition: opacity 300ms ease-in;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 800px) {
+ .features-sec {
+   margin: 150px 0 40px 0;
+ }
+
+
+ .features-sec h1,
+ .AppScreenshots h1 {
+   font-size: 18px;
+ }
+
+ .features-sec p,
+ .AppScreenshots p {
+   font-size: 12px;
+   text-align: center;
+ }
+
+ .card-holder {
+   display: grid;
+   /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+ }
+
+ .Hero {
+   width: 300px;
+ }
+
+ .card {
+   width: 320px;
+   padding: 60px;
+ }
+
+ .download-btn {
+   display: flex;
+   gap: 5px;
+   justify-content: center;
+ }
+
+ .card:hover {
+   padding: 80px;
+ }
+
+ .features {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .features h1 {
+   font-size: 16px;
+   text-align: center;
+ }
+
+ .features p {
+   font-size: 10px;
+   text-align: center;
+ }
+
+ .features a {
+   padding: 8px 5px;
+   width: 100px;
+ }
+
+ .features img {
+   position: relative;
+   left: 0;
+   right: 0;
+   top: 100px;
+   bottom: 0;
+   width: 100px;
+ }
+
+ .features img:last-child {
+   left: -20px;
+   top: 90px;
+ }
+
+ .features img:first-child {
+   left: 40px;
+   top: 50px;
+ }
+
+ /* .splash-img {
+ margin: 50px 0;
+} */
+
+ .features-card {
+   width: 350px;
+ }
+
+ #feat-grid {
+   display: grid;
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+ }
+
+ #feat-grid .feat-div {
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+ }
+
+ #feat-grid .feat-div p {
+   text-align: center;
+ }
+
+ .AppImg {
+   margin: 50px 0;
+ }
+
+ .price {
+   display: grid;
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+ }
+
+ .price .price-card {
+   width: 80vw;
+ }
+
+ /* .footer-card-A {
+ display: grid;
+ grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.footer-card-A h1,
+.footer-card-A p {
+ text-align: start;
+ font-size: 10px;
+}
+
+.footer-card-B {
+ display: grid;
+ grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.footer-card-B p,
+.footer-card-B a {
+ font-size: 10px;
+ text-align: center;
+}
+
+.footer-card-B .last-foot {
+ gap: 15px;
+ justify-content: center;
+} */
+
+ .price-card h1,
+ .price-card p {
+   text-align: center;
+ }
+
+ .stats-grid {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 1rem;
+   text-align: center;
+ }
+
+ #text-sec h1,
+ #text-sec p{
+   text-align: center;
+ }
+
+ #footer-col {
+   margin: 20px 0 0 0;
+ }
+
+ .a-sec a {
+   display: flex;
+   justify-content: center;
+ }
+
+ #stats {
+   text-align: center;
+ }
+
+ #text h3,
+ #text p {
+  text-align: center;
+ }
+
+ #contact {
+  margin: 250px 0 0 0;
+ }
+
+ #priv-ul {
+  padding: 0 15px;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+ #card-holder {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   margin: 0 0 -390px 0;
+ }
+
+ #card-holders {
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+ }
+
+
+ #pres-farm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #pres-farm h2,
+ #pres-farm p {
+   text-align: center;
+ }
+
+ #text-sec {
+   text-align: center;
+ }
+
+ #contact {
+  margin: -450px 0 0 0;
+ }
+}

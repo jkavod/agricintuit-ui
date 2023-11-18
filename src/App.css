@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffff;
+  border: #149930 2px solid;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #149930;
+  border-radius: 100px;
+  height: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}

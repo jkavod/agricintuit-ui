@@ -4,6 +4,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Logo } from "../Assets";
 import { Footer, Nav } from "../UI";
 import "../UI/Style.css";
+import { StaticButton } from "../Constants";
 
 const navigation = [
   { name: "Product", href: "#product-section" },
@@ -734,6 +735,7 @@ export default function Faqs() {
         </div>
       </div>
       <Footer />
+      <StaticButton />
     </div>
   );
 }

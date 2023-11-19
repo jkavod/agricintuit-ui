@@ -28,7 +28,7 @@ export default function Download() {
        </a>
        <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
          <span className="relative inline-block">
-           <svg
+           {/* <svg
              viewBox="0 0 52 24"
              fill="#149930"
              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-32 lg:-mt-10 sm:block"
@@ -49,7 +49,7 @@ export default function Download() {
                width="52"
                height="24"
              />
-           </svg>
+           </svg> */}
            <span className="relative bg-white">The</span>
          </span>{' '}
          Get this App, Available on

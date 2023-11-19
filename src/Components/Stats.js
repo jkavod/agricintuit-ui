@@ -1,5 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../UI/Style.css'
+
+
+const CountingNumbers = ({ targetNumber }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const increment = Math.ceil(targetNumber / 50);
+    const timer = setInterval(() => {
+      setCount((prevCount) => {
+        const nextCount = prevCount + increment;
+        return nextCount >= targetNumber ? targetNumber : nextCount;
+      });
+    }, 30);
+
+    return () => clearInterval(timer);
+  }, [targetNumber]);
+
+  return <p style={{ fontSize: '3rem', fontWeight: 'bold', color: "#149930" }}>{count}%</p>;
+};
 
 export default function Statistic() {
   return (
@@ -7,7 +26,7 @@ export default function Statistic() {
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"  id="text-sec">
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-green sm:text-4xl md:mx-auto" id="stats">
           <span className="relative inline-block">
-            <svg
+            {/* <svg
               viewBox="0 0 52 24"
               fill="#149930"
               className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
@@ -28,7 +47,7 @@ export default function Statistic() {
                 width="52"
                 height="24"
               />
-            </svg>
+            </svg> */}
             <span className="relative">Our</span>
           </span>{' '}
           User Statistics
@@ -44,36 +63,29 @@ export default function Statistic() {
         <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100" />
         <div className="relative flex flex-col items-center h-full py-10 duration-300 bg-white rounded-sm transition-color sm:items-stretch sm:flex-row">
           <div className="px-12 py-8 text-center flex flex-col gap-3">
-            <h6 className="text-4xl font-bold text-green sm:text-5xl">
-              82%
-            </h6>
+          
+            <CountingNumbers targetNumber={82} />
             <p className="text-center md:text-base text-green">
               Returned Customer
             </p>
           </div>
           <div className="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-deep-purple-accent-400 group-hover:scale-110 sm:h-auto sm:w-1" />
           <div className="px-12 py-8 text-center flex flex-col gap-3">
-            <h6 className="text-4xl font-bold text-green sm:text-5xl">
-              11k
-            </h6>
+          <CountingNumbers targetNumber={70} />
             <p className="text-center md:text-base text-green">
             Free Download
             </p>
           </div>
           <div className="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-deep-purple-accent-400 group-hover:scale-110 sm:h-auto sm:w-1" />
           <div className="px-12 py-8 text-center flex flex-col gap-3">
-            <h6 className="text-4xl font-bold text-green sm:text-5xl">
-              5
-            </h6>
+          <CountingNumbers targetNumber={80} />
             <p className="text-center md:text-base text-green">
             Best Award
             </p>
           </div>
           <div className="w-56 h-1 transition duration-300 transform bg-gray-300 rounded-full group-hover:bg-deep-purple-accent-400 group-hover:scale-110 sm:h-auto sm:w-1" />
           <div className="px-12 py-8 text-center flex flex-col gap-3">
-            <h6 className="text-4xl font-bold text-green sm:text-5xl">
-              106.5K
-            </h6>
+          <CountingNumbers targetNumber={90} />
             <p className="text-center md:text-base text-green">
             App Download
             </p>

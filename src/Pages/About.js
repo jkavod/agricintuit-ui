@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { AboutImage, Logo, ProactiveAI } from "../Assets";
 import { Footer, Nav } from "../UI";
+import { StaticButton } from "../Constants";
 import "../UI/Style.css";
 
 const navigation = [
@@ -11,6 +12,24 @@ const navigation = [
   { name: "Pricing", href: "#pricing-section" },
   { name: "Support", href: "#footer-section" },
 ];
+
+const CountingNumbers = ({ targetNumber }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const increment = Math.ceil(targetNumber / 50);
+    const timer = setInterval(() => {
+      setCount((prevCount) => {
+        const nextCount = prevCount + increment;
+        return nextCount >= targetNumber ? targetNumber : nextCount;
+      });
+    }, 30);
+
+    return () => clearInterval(timer);
+  }, [targetNumber]);
+
+  return <p style={{ fontSize: '3rem', fontWeight: 'bold' }}>{count}%</p>;
+};
 
 export default function About() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -114,10 +133,12 @@ export default function About() {
       </div>
 
       {/* ABOUT US */}
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-
+      <div
+        className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        id="about"
+      >
         <div className="grid gap-5 row-gap-8 lg:grid-cols-2" id="pres-farm">
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
+          <div className="flex items-center justify-center -mx-4 lg:pl-8">
             <div>
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96 bg-none"
@@ -158,11 +179,152 @@ export default function About() {
           </div>
         </div>
 
-        <div>
-          
+        <div
+          className="grid gap-5 row-gap-8 lg:grid-cols-2 mt-20"
+          id="pres-farm"
+        >
+          <div
+            className="flex flex-col justify-center sm:items-center"
+            id="pres-farm"
+          >
+            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+              <div className="grid gap-6 row-gap-10 lg:grid-cols-1">
+                <h1 className="text-4xl font-bold px-10">
+                  Unlock the power of AI with AgricIntuit
+                </h1>
+                <div className="lg:py-6 lg:pr-16">
+                  <div className="flex">
+                    <div className="flex flex-col items-center mr-4">
+                      <div>
+                        <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                          <svg
+                            className="w-4 text-gray-600"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            viewBox="0 0 24 24"
+                          >
+                            <line
+                              fill="none"
+                              strokeMiterlimit="10"
+                              x1="12"
+                              y1="2"
+                              x2="12"
+                              y2="22"
+                            />
+                            <polyline
+                              fill="none"
+                              strokeMiterlimit="10"
+                              points="19,15 12,22 5,15"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="w-px h-full bg-gray-300" />
+                    </div>
+                    <div className="pt-1 pb-8">
+                      <p className="mb-2 text-2xl font-bold">
+                        Our Vision: Redefining Possibilities
+                      </p>
+                      <p className="text-gray-700">
+                        To help our farmers achieve more by applying AI and
+                        innovative technologies.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <div className="flex flex-col items-center mr-4">
+                      <div>
+                        <div className="flex items-center justify-center w-10 h-10 border rounded-full">
+                          <svg
+                            className="w-4 text-gray-600"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            viewBox="0 0 24 24"
+                          >
+                            <line
+                              fill="none"
+                              strokeMiterlimit="10"
+                              x1="12"
+                              y1="2"
+                              x2="12"
+                              y2="22"
+                            />
+                            <polyline
+                              fill="none"
+                              strokeMiterlimit="10"
+                              points="19,15 12,22 5,15"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-1 pb-8">
+                      <p className="mb-2 text-2xl font-bold">
+                        Our Mission: Bridging AI and Reality
+                      </p>
+                      <p className="text-gray-700">
+                        We aim to provide complete AI-powered solutions for
+                        sustainable agriculture.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats */}
+          <div className="bg-white">
+            <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+              <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0"></div>
+              <div className="relative grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
+                <div className="overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+                  <div className="p-5 flex flex-col justify-center items-center h-full">
+                    <CountingNumbers targetNumber={98} />
+                    <p className="text-2xl leading-5 text-center text-gray-900">
+                      Prescient AI Actions
+                    </p>
+                  </div>
+                  <div className="w-full h-20 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                </div>
+                <div className="overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+                  <div className="p-5 flex flex-col justify-center items-center h-full">
+                  <CountingNumbers targetNumber={90} />
+                    <p className="text-2xl leading-5 text-center text-gray-900">
+                      Sustainable
+                    </p>
+                  </div>
+                  <div className="w-full h-20 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                </div>
+                <div className="overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+                  <div className="p-5 flex flex-col justify-center items-center h-full">
+                  <CountingNumbers targetNumber={95} />
+                    <p className="text-2xl leading-5 text-center text-gray-900">
+                      Happy Users
+                    </p>
+                  </div>
+                  <div className="w-full h-20 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                </div>
+                <div className="overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+                  <div className="p-5 flex flex-col justify-center items-center h-full">
+                  <CountingNumbers targetNumber={90} />
+                    <p className="text-2xl leading-5 text-center text-gray-900">
+                      Innovative
+                    </p>
+                  </div>
+                  <div className="w-full h-20 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
+      <StaticButton />
     </div>
   );
 }

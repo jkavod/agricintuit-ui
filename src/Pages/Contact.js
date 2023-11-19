@@ -3,6 +3,7 @@ import { Dialog } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Logo } from "../Assets";
 import { Footer, Nav } from "../UI";
+import { StaticButton } from "../Constants";
 import "../UI/Style.css";
 
 const navigation = [
@@ -303,6 +304,7 @@ export default function Contact() {
         ></iframe>
       </div>
       <Footer />
+      <StaticButton />
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function Header() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">AgricIntuit</span>
+                <span className="sr-only">Yiieldy</span>
                 <img
                   className="h-8 w-auto"
                   src={Logo}
@@ -98,10 +98,10 @@ export default function Header() {
           </div> */}
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            AgricIntuit - Agriculture, AI, and Sustainability
+            Yiieldy - Agriculture, AI, and Sustainability
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            AgricIntuit offers complete agricultural management services, including crop planting, growth monitoring, and harvesting.
+            Yiieldy offers complete agricultural management services, including crop planting, growth monitoring, and harvesting.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

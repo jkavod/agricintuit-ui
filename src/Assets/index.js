@@ -1,4 +1,4 @@
-export { default as Logo } from "./logo.svg";
+export { default as Logo } from "./logo.png";
 export { default as Favicon } from "./favicon.svg";
 export { default as PlayStore } from "./googleplay.svg";
 export { default as AppleStore } from "./applestore.svg";

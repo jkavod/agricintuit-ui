@@ -7,8 +7,8 @@ module.exports = {
         '[auto,auto,1fr]': 'auto auto 1fr',
       },
       colors: {
-        green: "#149930",
-        yellow: "#78AA17",
+        green: "#00A74F",
+        yellow: "#109100",
         greenShade: "rgba(20, 153, 48, 0.7)",
       }
     },

@@ -1,5 +1,5 @@
 import React from "react";
-import { ProactiveAI, Remote, TaskA, Yield } from "../Assets";
+import { Yield } from "../Assets";
 import '../UI/Style.css'
 
 export default function AppScreenshot() {

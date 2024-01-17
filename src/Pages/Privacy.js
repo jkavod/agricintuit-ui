@@ -30,7 +30,7 @@ export default function Privacy() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">AgricIntuit</span>
+                <span className="sr-only">Yiieldy</span>
                 <img className="h-8 w-auto" src={Logo} alt="Logo" />
               </a>
               <button
@@ -121,7 +121,7 @@ export default function Privacy() {
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
               <h1 className="mb-4 lg:text-4xl font-bold leading-none sm:text-2xl text-center">
-                Welcome To AgricIntuit Privacy Policys
+                Welcome To Yiieldy Privacy Policys
               </h1>
               <div className="relative">
                 <p className="text-base text-gray-700 md:text-lg text-center">

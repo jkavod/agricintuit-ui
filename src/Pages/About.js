@@ -48,7 +48,7 @@ export default function About() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">AgricIntuit</span>
+                <span className="sr-only">Yiieldy</span>
                 <img className="h-8 w-auto" src={Logo} alt="Logo" />
               </a>
               <button
@@ -164,7 +164,7 @@ export default function About() {
                   </span>
                 </h2> */}
               <h1 className="mb-6 font-sans text-3xl font-bold  text-gray-900 sm:text-4xl">
-                AgricIntuit is a leading AgTech company revolutionizing the
+                Yiieldy is a leading AgTech company revolutionizing the
                 agricultural industry with AI products to ensure a sustainable
                 future.
               </h1>
@@ -190,7 +190,7 @@ export default function About() {
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
               <div className="grid gap-6 row-gap-10 lg:grid-cols-1">
                 <h1 className="text-4xl font-bold px-10">
-                  Unlock the power of AI with AgricIntuit
+                  Unlock the power of AI with Yiieldy
                 </h1>
                 <div className="lg:py-6 lg:pr-16">
                   <div className="flex">

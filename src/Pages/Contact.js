@@ -30,7 +30,7 @@ export default function Contact() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">AgricIntuit</span>
+                <span className="sr-only">Yiieldy</span>
                 <img className="h-8 w-auto" src={Logo} alt="Logo" />
               </a>
               <button
@@ -87,7 +87,7 @@ export default function Contact() {
             <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
           </svg>
         </div>
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-72">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-72">
           <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
             <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-green sm:text-4xl sm:leading-none">
               Contact Us
@@ -117,7 +117,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <div className="overflow-hidden bg-white" id="contact">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
             {/* Contact Form */}
             <div className="w-full max-w-2xl xl:px-8 xl:w-[100%]">
@@ -290,7 +290,7 @@ export default function Contact() {
         </div>
       </div>
       {/* Map */}
-      <div className="relative h-[100vh] w-full lg:mt-20">
+      {/* <div className="relative h-[100vh] w-full lg:mt-20">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.568961358926!2d3.4695703!3d6.4493440999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5906feb1da5%3A0x865cd308ad80ee19!2sRegus%20-%20Lagos%2C%20Lekki%20Admiralty!5e0!3m2!1sen!2suk!4v1696207079923!5m2!1sen!2suk"
           width="600"
@@ -302,7 +302,7 @@ export default function Contact() {
           referrerPolicy="no-referrer-when-downgrade"
           title="Location Map"
         ></iframe>
-      </div>
+      </div> */}
       <Footer />
       <StaticButton />
     </div>

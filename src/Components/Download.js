@@ -55,7 +55,7 @@ export default function Download() {
          Get this App, Available on
        </h2>
        <p className="text-base text-gray-700 md:text-lg">
-       AgricIntuit: Download now for precise, compassionate solutions—empowering communities with revolutionary, sustainable agricultural practices. Go green, collaborate transparently!
+       Yiieldy: Download now for precise, compassionate solutions—empowering communities with revolutionary, sustainable agricultural practices. Go green, collaborate transparently!
        </p>
        <hr className="my-8 border-gray-300" />
        <div className="flex items-center mb-3 sm:justify-center gap-3">

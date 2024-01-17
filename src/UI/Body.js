@@ -1,13 +1,6 @@
 import React from "react";
 import {
-  App,
-  AppB,
-  Icon,
-  AppImgFeat,
-  One,
-  Two,
   SplashA,
-  Agric,
   AiPriceActions,
   HealthInsights,
   FinancialManagement,
@@ -99,15 +92,15 @@ export default function Body() {
                 </h1>
                 <div className="lg:pr-20">
                   <p className="text-base text-justify text-gray-700 md:text-lg">
-                    AgricIntuit pioneers precision farming, seamlessly
+                    Yiieldy pioneers precision farming, seamlessly
                     integrating technology and agronomy. From precise seed
                     placement using smart sensors to AI-driven harvesting,
                     AgriSense ensures optimal yield. Predictive analytics
                     empower farmers with actionable insights, elevating
-                    efficiency and sustainability. AgricIntuit's commitment
+                    efficiency and sustainability. Yiieldy's commitment
                     extends to personalized consultancy, where expert
                     agronomists collaborate with farmers. In the Precision
-                    Farming Revolution, AgricIntuit transforms agriculture into
+                    Farming Revolution, Yiieldy transforms agriculture into
                     a data-driven, sustainable success.
                   </p>
                 </div>
@@ -133,7 +126,7 @@ export default function Body() {
                 Awesome Features
               </h1>
               <p className="text-center text-2xl font-semibold text-gray-700">
-                AgricIntuit: Empowering farmers with precision tech, health
+                Yiieldy: Empowering farmers with precision tech, health
                 insights, and financial mastery.
               </p>
               <div className="flex justify-center items-center mb-20">
@@ -151,7 +144,7 @@ export default function Body() {
                       <p className="text-end text-xl w-[350px]">
                         Farmers face inefficiencies, crop diseases, pests,
                         weather uncertainties, yield variations, and
-                        sustainability issues. AgricIntuit uses precision
+                        sustainability issues. Yiieldy uses precision
                         technology that monitors weather, soil quality, and
                         animal health, together with advanced algorithms and
                         data analysis, to provide insights and statistics in
@@ -166,7 +159,7 @@ export default function Body() {
                     <p className="text-end text-sm w-[250px]">
                       Farmers face inefficiencies, crop diseases, pests, weather
                       uncertainties, yield variations, and sustainability
-                      issues. AgricIntuit uses precision technology that
+                      issues. Yiieldy uses precision technology that
                       monitors weather, soil quality, and animal health,
                       together with advanced algorithms and data analysis, to
                       provide insights and statistics in real-time to optimize
@@ -180,9 +173,9 @@ export default function Body() {
                     </div>
                     <h1 className="text-2xl">Comprehensive Health Insights</h1>
                     <p className="text-end text-sm w-[250px]">
-                      AgricIntuit is the ultimate solution for farmers who need
+                      Yiieldy is the ultimate solution for farmers who need
                       to assess the conditions of soil, plants, and animals.
-                      With cutting-edge sensors and AI, AgricIntuit simplifies
+                      With cutting-edge sensors and AI, Yiieldy simplifies
                       this complex and time-consuming task. It provides farmers
                       with detailed reports and recommendations based on the
                       data it gathers.
@@ -220,7 +213,7 @@ export default function Body() {
                       tracking, income recording, and financial analysis to
                       optimize resource utilization and profitability. Through
                       sophisticated financial tracking tools that record farming
-                      operation income and expenses, AgricIntuit allows farmers
+                      operation income and expenses, Yiieldy allows farmers
                       to confidently track their farm finances, manage them, and
                       plan for the future.
                     </p>
@@ -231,7 +224,7 @@ export default function Body() {
                     </div>
                     <h1 className="text-2xl">Herds Management</h1>
                     <p className="text-start text-sm w-[250px]">
-                      AgricIntuit's advanced RFID tagging and monitoring systems
+                      Yiieldy's advanced RFID tagging and monitoring systems
                       provide livestock farmers with an efficient solution to
                       manage their herds, enabling them to confidently track the
                       well-being and activities of individual animals.
@@ -266,7 +259,7 @@ export default function Body() {
           <div className="flex flex-col justify-center items-center mt-20 gap-3">
             <h1 className="text-4xl font-bold text-center">Quick Overview</h1>
             <p className="text-xl text-center text-gray-500">
-              AgricIntuit pioneers precision farming for thriving agriculture
+              Yiieldy pioneers precision farming for thriving agriculture
               with real-time insights
             </p>
             <div className="bg-green h-1 w-20 rounded-sm"></div>
@@ -275,15 +268,15 @@ export default function Body() {
         </div>
 
         {/* Testimonials */}
-        <div className="lg:-mt-48 mb-32">
+        {/* <div className="lg:-mt-48 mb-32">
           <Testimonials />
-        </div>
+        </div> */}
 
         {/* Pricing */}
         <div id="pricing-section">
           <div className="mb-10 flex flex-col gap-3">
             <h1 className="text-4xl font-bold text-center">
-              AgricIntuit options
+              Yiieldy options
             </h1>
             <div className="lg:px-48 sm:px-0 md:px-10">
               <p className="text-center text-xl">

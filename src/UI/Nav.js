@@ -52,7 +52,7 @@ export default function Nav() {
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li className="underln">
               <a
-                href="#product-section"
+                href="/#product-section"
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -62,7 +62,7 @@ export default function Nav() {
             </li>
             <li className="underln">
               <a
-                href="#features-section"
+                href="/#features-section"
                 aria-label="Features"
                 title="Features"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -72,7 +72,7 @@ export default function Nav() {
             </li>
             <li className="underln">
               <a
-                href="#pricing-section"
+                href="/#pricing-section"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -82,7 +82,7 @@ export default function Nav() {
             </li>
             <li className="underln">
               <a
-                href="#support-section"
+                href="/#support-section"
                 aria-label="Support"
                 title="Support"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
@@ -187,7 +187,7 @@ export default function Nav() {
                     <ul class="space-y-4">
                       <li>
                         <a
-                          href="#product-section"
+                          href="/#product-section"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -197,7 +197,7 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="#features-section"
+                          href="/#features-section"
                           aria-label="Features"
                           title="Features"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -207,7 +207,7 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="#pricing-section"
+                          href="/#pricing-section"
                           aria-label="Product pricing"
                           title="Product pricing"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -217,7 +217,7 @@ export default function Nav() {
                       </li>
                       <li>
                         <a
-                          href="#support-section"
+                          href="/#support-section"
                           aria-label="Pricing"
                           title="Pricing"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

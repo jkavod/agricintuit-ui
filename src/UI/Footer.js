@@ -16,7 +16,7 @@ export default function Footer() {
         />
       </svg>
 
-      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-5xl lg:px-10">
         <div className="grid row-gap-5 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a
@@ -227,7 +227,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row lg:px-0">
           <p className="text-sm text-black">
-            © Copyright 2023 AgricIntuit All rights reserved.
+            © Copyright 2023 Yiieldy All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a

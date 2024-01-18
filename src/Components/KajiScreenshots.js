@@ -1,6 +1,7 @@
 import React from "react";
 import "../UI/Style.css";
 import { AppleButton, GoogleButton, Mockup, MockupB } from "../Assets";
+import { Link } from "react-router-dom";
 
 export default function KajiScreenshots() {
   return (
@@ -43,14 +44,15 @@ export default function KajiScreenshots() {
                 </a>
               </div>
             </div>
-            <div className="flex items-center justify-end lg:w-1/2">
+            <Link className="flex items-center justify-end lg:w-1/2"
+            to={"/kaji"}>
               <div className="w-2/5">
                 <img className="object-cover" src={Mockup} alt="" />
               </div>
               <div className="w-5/12 -ml-16 lg:-ml-32">
                 <img className="object-cover" src={MockupB} alt="" />
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

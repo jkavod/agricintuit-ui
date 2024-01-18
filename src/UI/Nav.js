@@ -76,7 +76,7 @@ export default function Nav() {
                 )}
               </div>
             </li>
-            <li className="underln">
+            {/* <li className="underln">
               <a
                 href="/#features-section"
                 aria-label="Features"
@@ -95,7 +95,7 @@ export default function Nav() {
               >
                 Pricing
               </a>
-            </li>
+            </li> */}
             <li className="underln">
               <a
                 href="/#support-section"
@@ -226,7 +226,7 @@ export default function Nav() {
                           )}
                         </div>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="/#features-section"
                           aria-label="Features"
@@ -245,7 +245,7 @@ export default function Nav() {
                         >
                           Pricing
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           href="/#support-section"

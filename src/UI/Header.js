@@ -101,9 +101,9 @@ export default function Header() {
             Yiieldy - Agriculture, AI, and Sustainability
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Yiieldy offers complete agricultural management services, including crop planting, growth monitoring, and harvesting.
+            Yiieldy offers a complete agricultural services platform, including crop and livestock growth monitoring and harvesting.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            {/* <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green flex gap-1 items-center justify-center"
@@ -118,7 +118,7 @@ export default function Header() {
                 <img src={AppleStore} alt='Apple Store' className='w-10'/>
                 App Store
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div

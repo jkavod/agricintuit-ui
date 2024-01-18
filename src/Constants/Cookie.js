@@ -27,13 +27,13 @@ export default function Cookie() {
       classNames="cookie-banner"
       unmountOnExit
     >
-      <div className="fixed bottom-0 w-full bg-gray-500 text-white p-4">
+      <div className="fixed bottom-0 w-full h-14 bg-gray-500 text-white p-4 flex justify-between items-center">
         <p className="text-center">
           This website uses cookies. By continuing to use this site, you agree to our use of cookies.
         </p>
         <div className="flex justify-center mt-2">
           <button
-            className="mr-2 bg-green hover:bg-green-600 text-white px-4 py-2 rounded"
+            className="mr-2 bg-green hover:bg-green-600 text-white px-4 py-1 rounded"
             onClick={() => {
               handleAllow();
               setShowBanner(false);
@@ -42,7 +42,7 @@ export default function Cookie() {
             Allow
           </button>
           <button
-            className="bg-green hover:bg-green text-white px-4 py-2 rounded"
+            className="bg-green hover:bg-green text-white px-4 py-1 rounded"
             onClick={() => {
               handleCancel();
               setShowBanner(false);

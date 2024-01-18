@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Logo } from "../Assets";
 import "./Style.css";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +23,12 @@ export default function Nav() {
     };
   }, []);
 
-
   return (
-    <div className={`bg-${hasScrolled ? 'white' : 'transparent'} fixed top-0 w-full z-50`}>
+    <div
+      className={`bg-${
+        hasScrolled ? "white" : "transparent"
+      } fixed top-0 w-full z-50`}
+    >
       <div className="px-3 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8 sm:px-14">
         <div className="relative flex items-center justify-between">
           <a
@@ -32,7 +37,7 @@ export default function Nav() {
             title="AgricInuit"
             class="inline-flex items-center"
           >
-            <img src={Logo} alt="Logo" className="w-32 text-teal-accent-400"/>
+            <img src={Logo} alt="Logo" className="w-32 text-teal-accent-400" />
             {/* <svg
               class="w-8 text-teal-accent-400"
               viewBox="0 0 24 24"
@@ -50,15 +55,26 @@ export default function Nav() {
             </svg> */}
           </a>
           <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li className="underln">
-              <a
-                href="/#product-section"
-                aria-label="Our product"
-                title="Our product"
-                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+            <li className="relative">
+              <div
+                className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer relative"
+                onMouseEnter={() => setIsDropdownOpen(true)}
+                onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 Product
-              </a>
+                {/* Dropdown content */}
+                {isDropdownOpen && (
+                  <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                    <Link
+                      to={"/kaji"}
+                      className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 transition-colors duration-200 underln"
+                    >
+                      Kaji App
+                    </Link>
+                    {/* Add more dropdown items as needed */}
+                  </div>
+                )}
+              </div>
             </li>
             <li className="underln">
               <a
@@ -91,7 +107,7 @@ export default function Nav() {
               </a>
             </li>
           </ul>
-          <ul class="flex items-center hidden space-x-8 lg:flex">
+          {/* <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
@@ -112,7 +128,7 @@ export default function Nav() {
                 Sign up
               </a>
             </li>
-          </ul>
+          </ul> */}
           <div class="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -146,7 +162,11 @@ export default function Nav() {
                         title="Company"
                         class="inline-flex items-center"
                       >
-                        <img src={Logo} alt="Logo" className="w-32 text-teal-accent-400"/>
+                        <img
+                          src={Logo}
+                          alt="Logo"
+                          className="w-32 text-teal-accent-400"
+                        />
                         {/* <svg
                           class="w-8 text-deep-purple-accent-400"
                           viewBox="0 0 24 24"
@@ -185,15 +205,26 @@ export default function Nav() {
                   </div>
                   <nav>
                     <ul class="space-y-4">
-                      <li>
-                        <a
-                          href="/#product-section"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      <li className="relative">
+                        <div
+                          className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer relative"
+                          onMouseEnter={() => setIsDropdownOpen(true)}
+                          onMouseLeave={() => setIsDropdownOpen(false)}
                         >
                           Product
-                        </a>
+                          {/* Dropdown content */}
+                          {isDropdownOpen && (
+                            <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                              <Link
+                                to={"/kaji"}
+                                className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 transition-colors duration-200 underln"
+                              >
+                                Kaji App
+                              </Link>
+                              {/* Add more dropdown items as needed */}
+                            </div>
+                          )}
+                        </div>
                       </li>
                       <li>
                         <a
@@ -225,7 +256,7 @@ export default function Nav() {
                           Support
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="/"
                           class="inline-flex items-center justify-start w-full h-12 font-medium tracking-wide text-gray-700 transition duration-200 rounded focus:outline-none"
@@ -242,7 +273,7 @@ export default function Nav() {
                         >
                           Sign up
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </nav>
                 </div>
@@ -253,4 +284,4 @@ export default function Nav() {
       </div>
     </div>
   );
-};
+}

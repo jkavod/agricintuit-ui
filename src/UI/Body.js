@@ -69,16 +69,16 @@ export default function Body() {
           </div>
         </div> */}
 
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        {/* <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-5 row-gap-8 lg:grid-cols-2" id="pres-farm">
             <div
               className="flex flex-col justify-center sm:items-center"
               id="pres-farm"
             >
               <div className="mb-6" id="text-sec">
-                {/* <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Precision Farming Revolution */}
-                {/* <br className="hidden md:block" />
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Precision Farming Revolution
+                <br className="hidden md:block" />
                   jumps over{" "}
                   <span className="relative px-1">
                     <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
@@ -86,7 +86,7 @@ export default function Body() {
                       a lazy dog
                     </span>
                   </span>
-                </h2> */}
+                </h2>
                 <h1 className="mb-6 font-sans text-3xl font-bold  text-gray-900 sm:text-4xl">
                   Precision Farming Revolution
                 </h1>
@@ -116,10 +116,10 @@ export default function Body() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Features Section */}
-        <div className="features-sec" id="features-section">
+        {/* <div className="features-sec" id="features-section">
           <div className="">
             <div className="flex flex-col gap-4">
               <h1 className="text-center font-bold text-4xl">
@@ -137,7 +137,7 @@ export default function Body() {
               <div className="flex items-center gap-10" id="feat-grid">
                 <div className="flex flex-col gap-20">
                   <div className="flex flex-col items-end gap-4 feat-div">
-                    {/* <div className="flex flex-col items-end gap-4 mb-10 feat-div">
+                    <div className="flex flex-col items-end gap-4 mb-10 feat-div">
                       <h1 className="text-4xl font-bold text-right">
                         Yield Intelligence
                       </h1>
@@ -151,7 +151,7 @@ export default function Body() {
                         real-time to optimize farming practices for higher
                         yields and sustainable growth.
                       </p>
-                    </div> */}
+                    </div>
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img src={AiPriceActions} alt="" className="w-5 h-5" />
                     </div>
@@ -187,7 +187,7 @@ export default function Body() {
                 </div>
                 <div className="flex flex-col gap-20">
                   <div className="flex flex-col items-start gap-4 feat-div">
-                    {/* <div className="flex flex-col items-start gap-4 mb-10 feat-div">
+                    <div className="flex flex-col items-start gap-4 mb-10 feat-div">
                       <h1 className="text-4xl font-bold text-right">
                         Task-Planning Efficiency
                       </h1>
@@ -198,7 +198,7 @@ export default function Body() {
                         Risus commodo viverra maecenas accumsan lacus vel Lorem
                         ipsum dolor sit amet, consectetur.
                       </p>
-                    </div> */}
+                    </div>
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img
                         src={FinancialManagement}
@@ -234,28 +234,28 @@ export default function Body() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* App Screenshot */}
-        <div>
-          {/* <div className="flex flex-col gap-4 items-center justify-center mb-20 AppScreenshots">
+        {/* <div>
+          <div className="flex flex-col gap-4 items-center justify-center mb-20 AppScreenshots">
             <h1 className="text-4xl font-bold">App Screenshots</h1>
             <p className="text-xl text-gray-400">
               Ut totam hymenaeos a quasi enim, duis erat mollitia, pellentesque
               ac metus!
             </p>
             <div className="divider bg-green h-1 w-20 rounded-md"></div>
-          </div> */}
+          </div>
           <CarouselScreenshot />
-        </div>
+        </div> */}
 
         {/* Statistics */}
-        <div className="p-10 bg-white rounded mt-20">
+        {/* <div className="p-10 bg-white rounded mt-20">
           <Statistics />
-        </div>
+        </div> */}
 
         {/* CTA Section */}
-        <div>
+        {/* <div>
           <div className="flex flex-col justify-center items-center mt-20 gap-3">
             <h1 className="text-4xl font-bold text-center">Quick Overview</h1>
             <p className="text-xl text-center text-gray-500">
@@ -265,7 +265,7 @@ export default function Body() {
             <div className="bg-green h-1 w-20 rounded-sm"></div>
           </div>
           <CtaSection />
-        </div>
+        </div> */}
 
         {/* Testimonials */}
         {/* <div className="lg:-mt-48 mb-32">
@@ -273,7 +273,7 @@ export default function Body() {
         </div> */}
 
         {/* Pricing */}
-        <div id="pricing-section">
+        {/* <div id="pricing-section">
           <div className="mb-10 flex flex-col gap-3">
             <h1 className="text-4xl font-bold text-center">
               Yiieldy options
@@ -287,7 +287,7 @@ export default function Body() {
             </div>
           </div>
           <Pricing />
-        </div>
+        </div> */}
 
         {/* Download Section */}
         <div className="lg:mt-20">
@@ -300,9 +300,9 @@ export default function Body() {
         </div> */}
 
         {/* Partners */}
-        <div>
+        {/* <div>
           <Partners />
-        </div>
+        </div> */}
       </main>
     </>
   );

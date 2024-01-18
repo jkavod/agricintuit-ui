@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Download() {
  return (
-   <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+   <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-[50px]">
      <div className="max-w-lg sm:text-center sm:mx-auto">
        <a
          href="/"
@@ -26,7 +26,7 @@ export default function Download() {
            </svg>
          </div> */}
        </a>
-       <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+       <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mt-44">
          <span className="relative inline-block">
            {/* <svg
              viewBox="0 0 52 24"
@@ -55,7 +55,7 @@ export default function Download() {
          Get this App, Available on
        </h2>
        <p className="text-base text-gray-700 md:text-lg">
-       Yiieldy: Download now for precise, compassionate solutions—empowering communities with revolutionary, sustainable agricultural practices. Go green, collaborate transparently!
+       Kaji App: Download now for precise, compassionate solutions—empowering communities with revolutionary, sustainable agricultural practices. Go green, collaborate transparently!
        </p>
        <hr className="my-8 border-gray-300" />
        <div className="flex items-center mb-3 sm:justify-center gap-3">

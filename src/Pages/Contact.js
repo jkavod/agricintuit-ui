@@ -249,7 +249,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                <div className="duration-300 transform bg-white border-l-4 border-green hover:-translate-y-2">
+                {/* <div className="duration-300 transform bg-white border-l-4 border-green hover:-translate-y-2">
                   <div className="h-full p-5 border border-l-0 rounded-r shadow-sm flex justify-center items-center flex-col">
                     <h6 className="mb-2 font-semibold leading-5">Address</h6>
                     <p className="text-sm text-gray-900 text-center">
@@ -266,7 +266,7 @@ export default function Contact() {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <div className="duration-300 transform bg-white border-l-4 border-green hover:-translate-y-2">
                   <div className="h-full p-5 border border-l-0 rounded-r shadow-sm flex justify-center items-center flex-col">
                     <h6 className="mb-2 font-semibold leading-5">Call Us</h6>

@@ -3,6 +3,10 @@ import "./Style.css";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  
+  // AUtomatically change date
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="relative mt-16 bg-gray-100" id="support-section">
       <svg
@@ -142,7 +146,7 @@ export default function Footer() {
                 Contact Info
               </p>
               <ul className="mt-2 space-y-2">
-                <li>
+                {/* <li>
                   <a
                     href="#"
                     className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
@@ -155,7 +159,7 @@ export default function Footer() {
                       </span>
                     </span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="tel:+(234)8055316857"
@@ -227,7 +231,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row lg:px-0">
           <p className="text-sm text-black">
-            © Copyright 2023 Yiieldy All rights reserved.
+            © Copyright {currentYear} Yiieldy All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
             <a

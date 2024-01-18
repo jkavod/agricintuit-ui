@@ -6,6 +6,7 @@
  padding: 120px;
 }
 
+
 .features-sec {
  margin: 200px 0;
 }
@@ -164,7 +165,7 @@ li a {
 
  .features p {
    font-size: 10px;
-   text-align: center;
+   text-align: justify;
  }
 
  .features a {

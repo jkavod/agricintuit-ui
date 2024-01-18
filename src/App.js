@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About, Contact, FAQS, Home, Privacy, Terms } from "./Pages";
+import { Kaji } from "./Pages/products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/about" element={<About />} />
+          <Route exact path="/kaji" element={<Kaji />} />
         </Routes>
       </div>
     </Router>

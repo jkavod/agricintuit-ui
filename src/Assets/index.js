@@ -32,3 +32,7 @@ export { default as Linkedin } from "./linkedin.png";
 export { default as Twitter } from "./twitter.png";
 export { default as Ecoregions } from './ecoregions.png'
 export { default as AboutImage } from './about-img.jpg'
+export { default as Mockup } from './mockup.svg'
+export { default as MockupB } from './mockupB.svg'
+export { default as AppleButton } from './AppleButton.svg'
+export { default as GoogleButton } from './GoogleButton.png'

@@ -49,7 +49,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        <div className="max-w-sm mx-auto grid gap-6 md:max-w-full lg:grid-cols-4 items-start lg:max-w-full md:grid-cols-2">
+        <div className="max-w-sm mx-auto grid gap-6 md:max-w-full lg:grid-cols-2 w-[800px] items-start lg:max-w-full md:grid-cols-2">
           {/* Basic */}
           <div class="dark h-full">
             <div class="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-gray-100 border border-slate-200 dark:border-gray-100 shadow-lg shadow-slate-950/5">
@@ -84,7 +84,7 @@ export default function Pricing() {
                 Includes:
               </div>
               <ul class="text-black dark:text-black text-sm space-y-3 grow">
-                <li class="flex items-center">
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -97,7 +97,7 @@ export default function Pricing() {
                     livestock farmers with fewer than 21 animals who operate on
                     a small scale
                   </span>
-                </li>
+                </li> */}
                 <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -131,7 +131,7 @@ export default function Pricing() {
                   </svg>
                   <span>Limited support</span>
                 </li>
-                <li class="flex items-center">
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -140,7 +140,7 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Sensors and animal tags are not included.</span>
-                </li>
+                </li> */}
                 <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -168,7 +168,7 @@ export default function Pricing() {
           </div>
 
           {/* Standard */}
-          <div class="dark h-full">
+          {/* <div class="dark h-full">
             <div class="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-gray-100 border border-slate-200 dark:border-gray-100 shadow-lg shadow-slate-950/5">
               <div class="absolute top-0 right-0 mr-6 -mt-4">
                 <div class="inline-flex items-center text-xs font-semibold py-1.5 px-3 bg-yellow text-white rounded-full shadow-sm shadow-slate-950/5">
@@ -190,7 +190,6 @@ export default function Pricing() {
                   <span className="text-black font-medium">/mo</span>
                 </div>
 
-                {/* <div class="text-sm text-black mb-5">Growers</div> */}
                 <a
                   class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
                   href="#0"
@@ -344,7 +343,7 @@ export default function Pricing() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           {/* Standard */}
           <div class="h-full">
@@ -369,10 +368,7 @@ export default function Pricing() {
                   <span className="text-black font-medium">/mo</span>
                 </div>
 
-                {/* <div class="text-sm text-black mb-5">
-                  There are many variations available, but the majority have
-                  suffered.
-                </div> */}
+               
                 <a
                   class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
                   href="#0"
@@ -404,7 +400,7 @@ export default function Pricing() {
                   </svg>
                   <span>Animal health and treatment.</span>
                 </li>
-                <li class="flex items-center">
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -413,8 +409,8 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Remote monitoring.</span>
-                </li>
-                <li class="flex items-center">
+                </li> */}
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -423,7 +419,7 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Geographical mapping.</span>
-                </li>
+                </li> */}
                 <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -444,7 +440,7 @@ export default function Pricing() {
                   </svg>
                   <span>Tasks, timelines and reminders.</span>
                 </li>
-                <li class="flex items-center">
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -453,7 +449,7 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Payroll and contact information.</span>
-                </li>
+                </li> */}
                 <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -484,7 +480,7 @@ export default function Pricing() {
                   </svg>
                   <span>Dedicated support.</span>
                 </li>
-                <li class="flex items-center">
+                {/* <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -493,7 +489,7 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Sensors and animal tags are not included.</span>
-                </li>
+                </li> */}
                 <li class="flex items-center">
                   <svg
                     class="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -519,7 +515,7 @@ export default function Pricing() {
           </div>
 
           {/* Premium */}
-          <div class="h-full">
+          {/* <div class="h-full">
             <div class="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-gray-100 border border-slate-200 dark:border-gray-100 shadow-lg shadow-slate-950/5">
               <div class="mb-5">
               <div class="text-black dark:black font-semibold mb-1">
@@ -536,10 +532,7 @@ export default function Pricing() {
                   <span className="text-black font-medium">/mo</span>
                 </div>
 
-                {/* <div class="text-sm text-black mb-5">
-                  There are many variations available, but the majority have
-                  suffered.
-                </div> */}
+                
                 <a
                   class="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
                   href="#0"
@@ -723,7 +716,7 @@ export default function Pricing() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

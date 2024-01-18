@@ -21,3 +21,7 @@ body::-webkit-scrollbar-thumb {
 body {
   overflow-x: hidden;
 }
+
+#screenshot {
+  overflow-x: auto;
+}

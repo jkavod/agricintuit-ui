@@ -3,6 +3,7 @@ import { Footer, Nav } from "../UI";
 import {
   AiPriceActions,
   AppleButton,
+  Ecoregions,
   FinancialManagement,
   GoogleButton,
   HealthInsights,
@@ -12,7 +13,7 @@ import {
   SplashA,
 } from "../Assets";
 import { StaticButton } from "../Constants";
-import { CtaSection, Pricing } from "../Components";
+import { CtaSection, Download, Pricing } from "../Components";
 
 const shapedBorderStyle = {
   borderRadius: "50%",
@@ -32,16 +33,23 @@ export default function Home() {
             <div className="mb-16 lg:mb-0 lg:max-w-7xl lg:pr-5">
               <div className="max-w-xl mb-6">
                 <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w- mb-6">
-                  Stay ahead of the soaring costs of poultry feed with the Kaji
-                  App
+                  {/* Stay ahead of the soaring costs of poultry feed with the Kaji
+                  App */}
+                  Instead of lowering stock sizes, closing farms, or switching
+                  to cheaper feed options, Yiieldy Fiidz can assist you.
                 </h2>
-                <p className="text-gray-700 text-base md:text-lg">
-                  Kaji App helps you reduce feed costs, improve feed efficiency,
+                {/* <p className="text-gray-700 text-base md:text-lg">
+                  Yiieldy Fiidz helps you reduce feed costs, improve feed efficiency,
                   and enhance poultry performance. Download Kaji today and
                   discover the smartest way to feed your poultry.
+                </p> */}
+                <p className="text-gray-700 text-base md:text-lg">
+                  Yiieldy Fiidz helps you reduce feed costs, improve feed
+                  efficiency, and enhance poultry performance, Join the
+                  waitlist.
                 </p>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <a
                   href="/"
                   className="w-32 transition duration-300 hover:shadow-lg"
@@ -62,7 +70,22 @@ export default function Home() {
                     alt=""
                   />
                 </a>
-              </div>
+              </div> */}
+
+              <form className="flex flex-col items-center w-full mb-4 md:flex-row">
+                <input
+                  placeholder="Email"
+                  required=""
+                  type="text"
+                  className="flex-grow w-full h-12 px-32 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0"
+                />
+                <button
+                  type="submit"
+                  className="inline-flex items-center justify-center w-full h-12 px-4 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green"
+                >
+                  Join Waitlist
+                </button>
+              </form>
             </div>
             <div className="flex items-center justify-end lg:w-1/2">
               <div className="w-2/5">
@@ -156,10 +179,10 @@ export default function Home() {
                       AI assistant (knowledgeable Staff)
                     </h1>
                     <p className="text-start text-sm w-[250px]">
-                      Kaji app brings AI assistant to poultry farmers, a crucial
-                      tool that has the potential to revolutionize the way we
-                      work in our poultry farms. It harnesses the power of
-                      artificial intelligence (AI) to provide real-time
+                      Yiieldy Fiidz brings AI assistant to poultry farmers, a
+                      crucial tool that has the potential to revolutionize the
+                      way we work in our poultry farms. It harnesses the power
+                      of artificial intelligence (AI) to provide real-time
                       assistance, automate tasks, and facilitate knowledge
                       sharing.
                     </p>
@@ -170,10 +193,10 @@ export default function Home() {
                     </div>
                     <h1 className="text-2xl">Herds Management</h1>
                     <p className="text-start text-sm w-[250px]">
-                      Kaji's monitoring systems provide livestock farmers with
-                      an efficient solution to manage their herds, enabling them
-                      to confidently track the well-being and activities of
-                      individual animals.
+                      Yiieldy Fiidz's monitoring systems provide livestock
+                      farmers with an efficient solution to manage their herds,
+                      enabling them to confidently track the well-being and
+                      activities of individual animals.
                     </p>
                   </div>
                 </div>
@@ -208,12 +231,11 @@ export default function Home() {
           </div>
         </div> */}
 
-
         {/* Pricing */}
         <div id="pricing-section">
           <div className="mb-10 flex flex-col gap-3">
             {/* <h1 className="text-4xl font-bold text-center">
-              Kaji App options
+              Yiieldy Fiidz options
             </h1> */}
             {/* <div className="lg:px-48 sm:px-0 md:px-10">
               <p className="text-center text-xl">
@@ -226,17 +248,57 @@ export default function Home() {
           {/* <Pricing /> */}
         </div>
 
-         {/* CTA Section */}
-        <div>
-          <div className="flex flex-col justify-center items-center mt-20 gap-3">
-            <h1 className="text-4xl font-bold text-center">Quick Overview</h1>
-            {/* <p className="text-xl text-center text-gray-500">
-              Kaji App pioneers precision farming for thriving agriculture
-              with real-time insights
-            </p> */}
-            <div className="bg-green h-1 w-20 rounded-sm"></div>
+        {/* Download Section */}
+        <div className="lg:mt-20">
+          <Download />
+        </div>
+
+        {/* Trusted Company */}
+        <div className="bg-white py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+              Trusted by the world’s most innovative teams
+            </h2>
+            {/* <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"> */}
+            <div className="mx-auto mt-10 flex justify-center items-center gap-x-8 gap-y-10 sm:max-w-xl lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <img
+                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                //  src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+                src={Ecoregions}
+                alt="Transistor"
+                width={158}
+                height={48}
+              />
+              {/* <img
+           className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+           src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+           alt="Reform"
+           width={158}
+           height={48}
+         />
+         <img
+           className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+           src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+           alt="Tuple"
+           width={158}
+           height={48}
+         />
+         <img
+           className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+           src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+           alt="SavvyCal"
+           width={158}
+           height={48}
+         />
+         <img
+           className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+           src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+           alt="Statamic"
+           width={158}
+           height={48}
+         /> */}
+            </div>
           </div>
-          <CtaSection />
         </div>
 
         {/* Footer */}

@@ -54,7 +54,7 @@ export default function Nav() {
               <rect x="14" y="11" width="7" height="12" />
             </svg> */}
           </a>
-          <ul class="flex items-center hidden space-x-8 lg:flex">
+          {/* <ul class="flex items-center hidden space-x-8 lg:flex">
             <li className="relative">
               <div
                 className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400 cursor-pointer relative"
@@ -62,7 +62,6 @@ export default function Nav() {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 Product
-                {/* Dropdown content */}
                 {isDropdownOpen && (
                   <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
                     <Link
@@ -71,12 +70,11 @@ export default function Nav() {
                     >
                       Kaji App
                     </Link>
-                    {/* Add more dropdown items as needed */}
                   </div>
                 )}
               </div>
             </li>
-            {/* <li className="underln">
+            <li className="underln">
               <a
                 href="/#features-section"
                 aria-label="Features"
@@ -95,7 +93,7 @@ export default function Nav() {
               >
                 Pricing
               </a>
-            </li> */}
+            </li>
             <li className="underln">
               <a
                 href="/#support-section"
@@ -106,7 +104,7 @@ export default function Nav() {
                 Support
               </a>
             </li>
-          </ul>
+          </ul> */}
           {/* <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
@@ -203,7 +201,7 @@ export default function Nav() {
                       </button>
                     </div>
                   </div>
-                  <nav>
+                  {/* <nav>
                     <ul class="space-y-4">
                       <li className="relative">
                         <div
@@ -212,7 +210,7 @@ export default function Nav() {
                           onMouseLeave={() => setIsDropdownOpen(false)}
                         >
                           Product
-                          {/* Dropdown content */}
+                          Dropdown content
                           {isDropdownOpen && (
                             <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
                               <Link
@@ -221,12 +219,11 @@ export default function Nav() {
                               >
                                 Kaji App
                               </Link>
-                              {/* Add more dropdown items as needed */}
                             </div>
                           )}
                         </div>
                       </li>
-                      {/* <li>
+                      <li>
                         <a
                           href="/#features-section"
                           aria-label="Features"
@@ -245,7 +242,7 @@ export default function Nav() {
                         >
                           Pricing
                         </a>
-                      </li> */}
+                      </li>
                       <li>
                         <a
                           href="/#support-section"
@@ -256,7 +253,7 @@ export default function Nav() {
                           Support
                         </a>
                       </li>
-                      {/* <li>
+                      <li>
                         <a
                           href="/"
                           class="inline-flex items-center justify-start w-full h-12 font-medium tracking-wide text-gray-700 transition duration-200 rounded focus:outline-none"
@@ -273,9 +270,9 @@ export default function Nav() {
                         >
                           Sign up
                         </a>
-                      </li> */}
+                      </li>
                     </ul>
-                  </nav>
+                  </nav> */}
                 </div>
               </div>
             )}

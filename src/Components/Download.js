@@ -1,16 +1,16 @@
 import React from "react";
 
 export default function Download() {
- return (
-   <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-[50px]">
-     <div className="max-w-lg sm:text-center sm:mx-auto">
-       <a
-         href="/"
-         aria-label="Go Home"
-         title="Logo"
-         className="inline-block mb-4"
-       >
-         {/* <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+  return (
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-[50px]">
+      <div className="max-w-lg sm:text-center sm:mx-auto">
+        <a
+          href="/"
+          aria-label="Go Home"
+          title="Logo"
+          className="inline-block mb-4"
+        >
+          {/* <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
            <svg
              className="w-10 h-10 text-deep-purple-accent-400"
              stroke="currentColor"
@@ -25,10 +25,10 @@ export default function Download() {
              />
            </svg>
          </div> */}
-       </a>
-       <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mt-44">
-         <span className="relative inline-block">
-           {/* <svg
+        </a>
+        <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mt-44">
+          <span className="relative inline-block">
+            {/* <svg
              viewBox="0 0 52 24"
              fill="#149930"
              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-32 lg:-mt-10 sm:block"
@@ -50,15 +50,31 @@ export default function Download() {
                height="24"
              />
            </svg> */}
-           <span className="relative bg-white">The</span>
-         </span>{' '}
-         Get this App, Available on
-       </h2>
-       <p className="text-base text-gray-700 md:text-lg">
-       Kaji App: Download now for precise, compassionate solutions—empowering communities with revolutionary, sustainable agricultural practices. Go green, collaborate transparently!
-       </p>
-       <hr className="my-8 border-gray-300" />
-       <div className="flex items-center mb-3 sm:justify-center gap-3">
+            <span className="relative bg-white">The</span>
+          </span>{" "}
+          Get this App, Available on
+        </h2>
+        <p className="text-base text-gray-700 md:text-lg">
+          Yiieldy Fiidz: Download now for precise, compassionate
+          solutions—empowering communities with revolutionary, sustainable
+          agricultural practices. Go green, collaborate transparently!
+        </p>
+        <hr className="my-8 border-gray-300" />
+        <form className="flex flex-col items-center w-full mb-4 md:flex-row">
+          <input
+            placeholder="Email"
+            required=""
+            type="text"
+            className="flex-grow w-full h-12 px-32 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0"
+          />
+          <button
+            type="submit"
+            className="inline-flex items-center justify-center w-full h-12 px-10 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green"
+          >
+            Join Waitlist
+          </button>
+        </form>
+        {/* <div className="flex items-center mb-3 sm:justify-center gap-3">
         
          <a href="/" className="transition duration-300 hover:shadow-lg">
            <img
@@ -76,12 +92,12 @@ export default function Download() {
            />
          </a>
 
-       </div>
-       {/* <p className="max-w-xs text-xs text-gray-600 sm:text-sm sm:max-w-sm sm:mx-auto">
+       </div> */}
+        {/* <p className="max-w-xs text-xs text-gray-600 sm:text-sm sm:max-w-sm sm:mx-auto">
          Sed ut unde omnis iste natus accusantium doloremque laudantium omnis
          iste.
        </p> */}
-     </div>
-   </div>
- );
-};
+      </div>
+    </div>
+  );
+}

@@ -52,13 +52,13 @@ export default function Download() {
            </svg> */}
             <span className="relative bg-white">The</span>
           </span>{" "}
-          Get this App, Available on
+          Get this App
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
+        {/* <p className="text-base text-gray-700 md:text-lg">
           Yiieldy Fiidz: Download now for precise, compassionate
           solutions—empowering communities with revolutionary, sustainable
           agricultural practices. Go green, collaborate transparently!
-        </p>
+        </p> */}
         <hr className="my-8 border-gray-300" />
         <form className="flex flex-col items-center w-full mb-4 md:flex-row">
           <input

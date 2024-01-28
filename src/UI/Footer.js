@@ -54,8 +54,8 @@ export default function Footer() {
                 Company
               </span> */}
             </a>
-            <div className="mt-4 lg:max-w-[300px]">
-              <p className="text-xl text-deep-purple-50 text-justify">
+            <div className="mt-4 lg:max-w-[400px]">
+              <p className="lg:text-xl sm:text-sm text-deep-purple-50 text-justify">
                 Our commitment to delivering cutting-edge, AI-infused products
                 is at the core of our ethos. Our team of multidisciplinary
                 experts collaborates to craft innovative solutions that address
@@ -72,14 +72,14 @@ export default function Footer() {
             id="footer-col"
           >
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400 text-2xl">
+              <p className="font-semibold tracking-wide text-teal-accent-400 lg:text-2xl">
                 Support
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <Link
                     to={"/faqs"}
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     FAQ's
                   </Link>
@@ -87,7 +87,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to={"/terms"}
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     Terms and Conditions
                   </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to={"/privacy"}
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     Privacy Policy
                   </Link>
@@ -118,7 +118,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to={"/about"}
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     About us
                   </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to={"/contact"}
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     Contact Us
                   </Link>
@@ -134,7 +134,7 @@ export default function Footer() {
                 {/* <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     Customers
                   </a>
@@ -149,7 +149,7 @@ export default function Footer() {
                 {/* <li>
                   <a
                     href="#"
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     <span className="text-gray-800 font-bold text-xl">
                       Office:{" "}
@@ -163,11 +163,11 @@ export default function Footer() {
                 <li>
                   <a
                     href="tel:+(234)8055316857"
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
-                    <span className="text-gray-800 font-bold text-xl">
+                    <span className="text-gray-800 font-bold lg:text-xl sm:text-sm">
                       Call Us:{" "}
-                      <span className="text-xl font-normal text-gray-700">
+                      <span className="lg:text-xl sm:text-sm font-normal text-gray-700">
                         +(234)8055316857
                       </span>
                     </span>
@@ -176,11 +176,11 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:contactus@logicgraph.io"
-                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
-                    <span className="text-gray-800 font-bold text-xl">
+                    <span className="text-gray-800 font-bold lg:text-xl sm:text-sm">
                       Email Us:{" "}
-                      <span className="text-xl font-normal text-gray-700">
+                      <span className="lg:text-xl sm:text-sm font-normal text-gray-700">
                         contactus@logicgraph.io
                       </span>
                     </span>

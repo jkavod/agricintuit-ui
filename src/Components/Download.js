@@ -1,4 +1,5 @@
 import React from "react";
+import { Waitlist } from "../Constants";
 
 export default function Download() {
   return (
@@ -60,20 +61,7 @@ export default function Download() {
           agricultural practices. Go green, collaborate transparently!
         </p> */}
         <hr className="my-8 border-gray-300" />
-        <form className="flex flex-col items-center w-full mb-4 md:flex-row">
-          <input
-            placeholder="Email"
-            required=""
-            type="text"
-            className="flex-grow w-full h-12 px-32 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0"
-          />
-          <button
-            type="submit"
-            className="inline-flex items-center justify-center w-full h-12 px-10 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green"
-          >
-            Join Waitlist
-          </button>
-        </form>
+        <Waitlist />
         {/* <div className="flex items-center mb-3 sm:justify-center gap-3">
         
          <a href="/" className="transition duration-300 hover:shadow-lg">

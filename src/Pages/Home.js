@@ -12,7 +12,7 @@ import {
   MockupB,
   SplashA,
 } from "../Assets";
-import { StaticButton } from "../Constants";
+import { StaticButton, Waitlist } from "../Constants";
 import { CtaSection, Download, Pricing } from "../Components";
 
 const shapedBorderStyle = {
@@ -28,11 +28,11 @@ export default function Home() {
         <Nav />
 
         {/* Hero - Section */}
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-40">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-40">
           <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
             <div className="mb-16 lg:mb-0 lg:max-w-7xl lg:pr-5">
-              <div className="max-w-xl mb-6">
-                <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w- mb-6">
+              <div className="max-w-2xl mb-6 lg:mt-0 mt-20">
+                <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-2xl mb-6">
                   {/* Stay ahead of the soaring costs of poultry feed with the Kaji
                   App */}
                   Instead of lowering stock sizes, closing farms, or switching
@@ -69,25 +69,11 @@ export default function Home() {
                     className="object-cover object-top w-full h-auto mx-auto rounded-2xl"
                     alt=""
                   />
-                </a>
-              </div> */}
-
-              <form className="flex flex-col items-center w-full mb-4 md:flex-row">
-                <input
-                  placeholder="Email"
-                  required=""
-                  type="text"
-                  className="flex-grow w-full h-12 px-32 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0"
-                />
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center w-full h-12 px-4 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green"
-                >
-                  Join Waitlist
-                </button>
-              </form>
+                  </a>
+                </div> */}
+              <Waitlist />
             </div>
-            <div className="flex items-center justify-end lg:w-1/2">
+            <div className="flex items-center lg:justify-end lg:w-1/2 justify-center">
               <div className="w-2/5">
                 <img className="object-cover" src={Mockup} alt="" />
               </div>

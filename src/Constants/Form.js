@@ -1,16 +1,27 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Select from "react-select";
 
-const apiKey =
-  "EAANARNFNq1gBOyzvSsGHg7ej3ZAkZBwdcqSZAt1tt2duazEcFX0I411JLce0ZCSCKwcuiLA1H1k8BdbW4jfrOEKQppooZBd4xfVQnhWBeZAqhmH35ZC6rxKzn9nYKBQW0EEtl6apfZBdwUzAD66dKsfVM05nF5vq2zETkePQgFyb158KXmKR9ZBeZC2SFM0CjlTYlNWoKQ3vLsmOqpZCrebuF1lrIz7gzpyYGzX";
+const apiKey = "EAANARNFNq1gBO2W1kwCQOFw1ctKWXZCH8VR3wWvwXx2ogD2mlyqZA6vHksM73UT6XgppjW8womSeF6HOlXowmkHFB2lYKp53xE1ztEQgGH7KcYMdZC2O36vlDK9Hm1oadiwr7BNqzZAbdFzfxoGJqTvQL4kRZC9kmMZCKBYAf9ZCBdtD0sU5xkOZBAq1ojkcWA9zY9dOIZCUXZAfZB9CJJkCG0i7NwYam8vOOBPpAZDZD"; 
 
 export default function Form() {
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [countries] = useState([
+    { value: "+1", label: "US (+1)" },
+    { value: "+44", label: "UK (+44)" },
+    { value: "+234", label: "NIG (+234)" },
+  ]);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!selectedCountry) {
+      setError("Please select a country code.");
+      return;
+    }
 
     try {
       // Save data to the Firebase Realtime Database
@@ -21,7 +32,9 @@ export default function Form() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ Number: phoneNumber }),
+          body: JSON.stringify({
+            Number: `${selectedCountry.value}${phoneNumber}`,
+          }),
         }
       );
 
@@ -35,7 +48,7 @@ export default function Form() {
         "https://graph.facebook.com/v18.0/203864902816928/messages",
         {
           messaging_product: "whatsapp",
-          to: `whatsapp.${phoneNumber}`, // Use the phone number from the input
+          to: `whatsapp.${selectedCountry.value}${phoneNumber}`,
           type: "template",
           template: {
             name: "yiieldy_wait_lists_users",
@@ -66,16 +79,12 @@ export default function Form() {
       //   console.error("Facebook API error:", response.data);
       // }
 
-      // console.log(response);
-
       setPhoneNumber(""); // Clear the phone number input
-   
-   } 
-   catch (error) {
-    //   // Handle other errors
-    //   setError("An unexpected error occurred. Please try again.");
-    //   setSuccess(null); // Clear any previous success messages
-    //   console.error(error);
+    } catch (error) {
+      // Handle other errors
+      setError("An unexpected error occurred. Please try again.");
+      setSuccess(null); // Clear any previous success messages
+      console.error(error);
     }
   };
 
@@ -90,18 +99,27 @@ export default function Form() {
           onSubmit={handleSubmit}
           method="POST"
         >
-          <input
-            placeholder="WhatsApp Phone Number"
-            required=""
-            type="text"
-            value={phoneNumber}
-            name="Number"
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            className="flex-grow w-full h-12 px-2 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0"
-          />
+          <div className="bg-white border border-gray-300 flex justify-between shadow-m items-center w-full h-12 px-2 gap-10 rounded">
+            <Select
+              options={countries}
+              value={selectedCountry}
+              onChange={(selectedOption) => setSelectedCountry(selectedOption)}
+              placeholder="NIG (+234)"
+              className="outline-none"
+            />
+            <input
+              placeholder="WhatsApp Phone Number"
+              required=""
+              type="text"
+              value={phoneNumber}
+              name="Number"
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              className="outline-none"
+            />
+          </div>
           <button
             type="submit"
-            className="inline-flex items-center justify-center w-full h-12 px-0 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green"
+            className="inline-flex items-center justify-center lg:w-80 w-full h-12 px-0 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green lg:ml-2 lg:mt-0 mt-2"
           >
             Join Waitlist
           </button>

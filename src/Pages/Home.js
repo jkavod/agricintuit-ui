@@ -35,8 +35,7 @@ export default function Home() {
                 <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-2xl mb-6">
                   {/* Stay ahead of the soaring costs of poultry feed with the Kaji
                   App */}
-                  Instead of lowering stock sizes, closing farms, or switching
-                  to cheaper feed options, Yiieldy Fiidz can assist you.
+                  Stay ahead of the soaring costs of poultry feed with the Yiieldy Fiidz App
                 </h2>
                 {/* <p className="text-gray-700 text-base md:text-lg">
                   Yiieldy Fiidz helps you reduce feed costs, improve feed efficiency,

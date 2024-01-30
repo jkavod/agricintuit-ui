@@ -28,7 +28,6 @@ export default function Download() {
          </div> */}
         </a>
         <h2 className="mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none mt-44">
-          <span className="relative inline-block">
             {/* <svg
              viewBox="0 0 52 24"
              fill="#149930"
@@ -51,8 +50,6 @@ export default function Download() {
                height="24"
              />
            </svg> */}
-            <span className="relative bg-white">The</span>
-          </span>{" "}
           Get this App
         </h2>
         {/* <p className="text-base text-gray-700 md:text-lg">

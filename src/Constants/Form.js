@@ -8,8 +8,8 @@ export default function Form() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [countries] = useState([
-    { value: "+1", label: "US (+1)" },
-    { value: "+44", label: "UK (+44)" },
+    // { value: "+1", label: "US (+1)" },
+    // { value: "+44", label: "UK (+44)" },
     { value: "+234", label: "NIG (+234)" },
   ]);
   const [error, setError] = useState(null);
@@ -99,13 +99,12 @@ export default function Form() {
           onSubmit={handleSubmit}
           method="POST"
         >
-          <div className="bg-white border border-gray-300 flex justify-between shadow-m items-center w-full h-12 px-2 gap-10 rounded">
+          <div className="bg-white border border-gray-300 flex shadow-m items-center w-full h-12 px-1 gap-1 rounded">
             <Select
               options={countries}
               value={selectedCountry}
               onChange={(selectedOption) => setSelectedCountry(selectedOption)}
-              placeholder="NIG (+234)"
-              className="outline-none"
+              className="outline-non w-60 px-0"
             />
             <input
               placeholder="WhatsApp Phone Number"
@@ -114,12 +113,12 @@ export default function Form() {
               value={phoneNumber}
               name="Number"
               onChange={(e) => setPhoneNumber(e.target.value)}
-              className="outline-none"
+              className="outline-none w-full"
             />
           </div>
           <button
             type="submit"
-            className="inline-flex items-center justify-center lg:w-80 w-full h-12 px-0 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green lg:ml-2 lg:mt-0 mt-2"
+            className="inline-flex items-center justify-center lg:w-80 w-full h-12 px-0 font-bold tracking-wide text-white transition duration-200 rounded shadow-md bg-green md:ml-2 lg:ml-2 lg:mt-0 mt-2 md:mt-0"
           >
             Join Waitlist
           </button>

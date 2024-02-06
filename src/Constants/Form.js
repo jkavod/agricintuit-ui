@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import axios from "axios";
 import Select from "react-select";
 
-const apiKey = "EAANARNFNq1gBO2W1kwCQOFw1ctKWXZCH8VR3wWvwXx2ogD2mlyqZA6vHksM73UT6XgppjW8womSeF6HOlXowmkHFB2lYKp53xE1ztEQgGH7KcYMdZC2O36vlDK9Hm1oadiwr7BNqzZAbdFzfxoGJqTvQL4kRZC9kmMZCKBYAf9ZCBdtD0sU5xkOZBAq1ojkcWA9zY9dOIZCUXZAfZB9CJJkCG0i7NwYam8vOOBPpAZDZD"; 
+const apiKey = "de386972d6a8a54e2657a6b2b5840212-ac903747-87eb-400a-93f5-6e03f297a0a2";
 
 export default function Form() {
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [selectedCountry, setSelectedCountry] = useState({ value: "+234", label: "NIG (+234)" });
   const [countries] = useState([
-    // { value: "+1", label: "US (+1)" },
-    // { value: "+44", label: "UK (+44)" },
     { value: "+234", label: "NIG (+234)" },
   ]);
   const [error, setError] = useState(null);
@@ -24,7 +22,6 @@ export default function Form() {
     }
 
     try {
-      // Save data to the Firebase Realtime Database
       const dbResponse = await fetch(
         "https://yiieldy-web-default-rtdb.firebaseio.com/yiieldy_wait_lists_users.json",
         {
@@ -38,52 +35,44 @@ export default function Form() {
         }
       );
 
-      // Check if data saved successfully to the database
       if (!dbResponse.ok) {
         throw new Error("Error saving data to the database.");
       }
 
-      // Make API request to Facebook Graph API
       const response = await axios.post(
-        "https://graph.facebook.com/v18.0/203864902816928/messages",
+        "https://pp4eym.api.infobip.com/sms/2/text/advanced",
         {
-          messaging_product: "whatsapp",
-          to: `whatsapp.${selectedCountry.value}${phoneNumber}`,
-          type: "template",
-          template: {
-            name: "yiieldy_wait_lists_users",
-            language: {
-              code: "en",
-            },
-          },
+          messages: [{
+            destinations: [{ to: `${selectedCountry.value}${phoneNumber}` }],
+            from: "ServiceSMS",
+            text: "Yiieldy Fiidz App\nWe appreciate your interest in the Yiieldy Fiidz app. We will send you a download link once it is available on the app store.\nYiieldy.com",
+          }],
         },
         {
           headers: {
-            Authorization: `Bearer ${apiKey}`,
+            Authorization: `App ${apiKey}`,
             "Content-Type": "application/json",
           },
         }
       );
 
-      // Check if the Facebook API request was successful
       // if (
       //   response.status === 200 &&
       //   response.data &&
       //   response.data.messages[0].status === "sent"
       // ) {
       //   setSuccess("Message sent successfully!");
-      //   setError(null); // Clear any previous error messages
+      //   setError(null);
       // } else {
       //   setError("Error sending message. Please try again.");
-      //   setSuccess(null); // Clear any previous success messages
-      //   console.error("Facebook API error:", response.data);
+      //   setSuccess(null);
+      //   console.error("Infobip API error:", response.data);
       // }
 
-      setPhoneNumber(""); // Clear the phone number input
+      setPhoneNumber("");
     } catch (error) {
-      // Handle other errors
       setError("An unexpected error occurred. Please try again.");
-      setSuccess(null); // Clear any previous success messages
+      setSuccess(null);
       console.error(error);
     }
   };
@@ -107,7 +96,7 @@ export default function Form() {
               className="outline-non w-60 px-0"
             />
             <input
-              placeholder="WhatsApp Phone Number"
+              placeholder="Phone Number"
               required=""
               type="text"
               value={phoneNumber}

@@ -55,12 +55,12 @@ export default function Footer() {
               </span> */}
             </a>
             <div className="mt-4 lg:max-w-[400px]">
-              <p className="lg:text-xl sm:text-sm text-deep-purple-50 text-justify">
+              {/* <p className="lg:text-xl sm:text-sm text-deep-purple-50 text-justify">
                 Our commitment to delivering cutting-edge, AI-infused products
                 is at the core of our ethos. Our team of multidisciplinary
                 experts collaborates to craft innovative solutions that address
                 global challenges.
-              </p>
+              </p> */}
               {/* <p className="mt-4 text-sm text-deep-purple-50">
                 Eaque ipsa quae ab illo inventore veritatis et quasi architecto
                 beatae vitae dicta sunt explicabo.
@@ -234,14 +234,14 @@ export default function Footer() {
             © Copyright {currentYear} Yiieldy All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
-            <a
+            {/* <a
               href="/"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400 text-xl hover:-translate-y-1 hover:p-2 bg-green p-2 rounded-full"
             >
               <img src={Twitter} alt="Twitter" className="h-5" />
-            </a>
+            </a> */}
             <a
-              href="/"
+              href="https://www.linkedin.com/company/yiieldy/"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400 hover:-translate-y-1 hover:p-2 bg-green p-2 rounded-full"
             >
               <img src={Linkedin} alt="Linkedin" className="h-5" />

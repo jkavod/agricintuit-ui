@@ -39,22 +39,22 @@ export default function Form() {
         throw new Error("Error saving data to the database.");
       }
 
-      const response = await axios.post(
-        "https://pp4eym.api.infobip.com/sms/2/text/advanced",
-        {
-          messages: [{
-            destinations: [{ to: `${selectedCountry.value}${phoneNumber}` }],
-            from: "ServiceSMS",
-            text: "Yiieldy Fiidz App\nWe appreciate your interest in the Yiieldy Fiidz app. We will send you a download link once it is available on the app store.\nYiieldy.com",
-          }],
-        },
-        {
-          headers: {
-            Authorization: `App ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      // const response = await axios.post(
+      //   "https://pp4eym.api.infobip.com/sms/2/text/advanced",
+      //   {
+      //     messages: [{
+      //       destinations: [{ to: `${selectedCountry.value}${phoneNumber}` }],
+      //       from: "ServiceSMS",
+      //       text: "Yiieldy Fiidz App\nWe appreciate your interest in the Yiieldy Fiidz app. We will send you a download link once it is available on the app store.\nYiieldy.com",
+      //     }],
+      //   },
+      //   {
+      //     headers: {
+      //       Authorization: `App ${apiKey}`,
+      //       "Content-Type": "application/json",
+      //     },
+      //   }
+      // );
 
       // if (
       //   response.status === 200 &&

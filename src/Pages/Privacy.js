@@ -93,9 +93,7 @@ export default function Privacy() {
               Privacy Policy
             </h2>
             <p className="mb-6 text-base font-normal tracking-wide text-green md:text-lg">
-              This focuses on detailing clear and concise instructions for users
-              to opt out of specific data collection, marketing communications,
-              or any other activities outlined in the privacy policy.
+            This policy details clear and concise instructions for users to opt out of specific data collection, marketing communications, or other activities outlined in the privacy policy.
             </p>
             <a
               href="#privacy"
@@ -120,42 +118,33 @@ export default function Privacy() {
         <div className="max-w-screen-lg sm:mx-auto">
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
-              <h1 className="mb-4 lg:text-4xl font-bold leading-none sm:text-2xl text-center">
-                Welcome To Yiieldy Privacy Policys
-              </h1>
               <div className="relative">
                 <p className="text-base text-gray-700 md:text-lg text-center">
-                  Welcome to our Privacy Policy. This document explains how we
+                  {/* Welcome to our Privacy Policy. This document explains how we
                   collect, use, disclose, and protect your personal information
                   when you use our services. We are committed to respecting your
                   privacy and ensuring the confidentiality and security of your
-                  personal information.
+                  personal information. */}
+                  This document explains how we collect, use, disclose, and protect your personal information when you utilize our services. We are committed to respecting your privacy and ensuring the confidentiality and security of your personal information.
                 </p>
               </div>
             </div>
           </div>
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
-              <h2 className="mb-4 text-xl font-bold leading-none sm:text-2xl">
-                Information We Collect:
-              </h2>
               <div className="relative">
                 <p>
-                  We may collect various types of information, including but not
-                  limited to:
+                We may collect various types of information, including but not limited to:
                 </p>
                 <ul className="list-disc px-5" id="priv-ul">
                   <li>
-                    Personal Information: Name, contact information, email
-                    address, etc.
+                  Personal Information: Name, contact information, email address, etc.
                   </li>
                   <li>
-                    Usage Information: Data about your interaction with our
-                    services, including log data and analytics.
+                  Usage Information: Data about your interaction with our services, including log data and analytics.
                   </li>
                   <li>
-                    Cookies and Tracking: Information obtained through cookies
-                    and similar technologies.
+                  Cookies and Tracking: Information obtained through cookies and similar technologies.
                   </li>
                 </ul>
               </div>
@@ -285,7 +274,7 @@ export default function Privacy() {
                    Tel: +(234)8055316857
                   </li>
                   <li>
-                  E-mail: contactus@logicgraph.net
+                  E-mail: contactus@logicgraph.io
                   </li>
                 </ul>
                 <p>By using our services, you consent to the terms outlined in this Privacy Policy.</p>

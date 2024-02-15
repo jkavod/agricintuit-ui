@@ -90,7 +90,7 @@ export default function Faqs() {
       </header>
 
       {/* FAQS HERO SECTION */}
-      <div className="relative bg-gray-100">
+      <div className="relative bg-gray-100 overflow-y-hidden">
         <div className="absolute inset-x-0 bottom-0">
           <svg
             viewBox="0 0 224 12"
@@ -107,8 +107,8 @@ export default function Faqs() {
               FAQ's
             </h2>
             <p className="mb-6 text-base font-normal tracking-wide text-green md:text-lg">
-              Resolving Common Problems: Troubleshooting Common Issues Our Users
-              Might Encounter while Our Product or Service
+              Resolving Common Problems: Troubleshooting common issues our users
+              might encounter while using our products or services.
             </p>
             <a
               href="#faqs"
@@ -129,7 +129,7 @@ export default function Faqs() {
       </div>
 
       {/* FAQS QUESTIONS */}
-      <div className="h-screen max-w-7xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-20">
+      <div className="h-full max-w-7xl px-2 py-3 mx-auto mt-32 tracking-wide md:px-4 md:mt-20">
         <div className="flex justify-center">
           <h1 className="text-3xl" id="faqs">
             Frequently Asked Questions
@@ -146,8 +146,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    What is Agric Sense technology, and how does it relate to
-                    agriculture?
+                  What is Yiieldy, and how does it work?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -170,11 +169,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Agric Sense technology involves utilizing sensors, IoT
-                  devices, and data analytics in agriculture to monitor and
-                  analyze various parameters such as soil conditions, weather,
-                  and crop health. It helps farmers make data-driven decisions,
-                  optimizing farming processes and improving yields.
+                 Yiieldy is a comprehensive AgTech platform with various products and apps that help farmers grow and manage their farm businesses
                 </div>
               </div>
             </div>
@@ -189,8 +184,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    How does your company use artificial intelligence to play a
-                    role in modern agriculture through Agric Sense technology?
+                  Do I have to create an account to use Yiieldy app features?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -213,12 +207,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  We employ the use of AI which processes the data collected by
-                  Agric Sense technology to derive meaningful insights. Our AI
-                  algorithms analyze the data to provide predictions, optimize
-                  irrigation, detect diseases, recommend crop rotations, and
-                  offer real-time monitoring, ultimately enhancing farming
-                  efficiency and productivity.
+                Yes. You only need to create one login account to access all Yiieldy apps.
                 </div>
               </div>
             </div>
@@ -233,8 +222,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    What are the primary benefits of using our AI-powered Agric
-                    Sense technology for farmers?
+                  Could you please provide me with the pricing information for the Yiieldy app?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -257,11 +245,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  The benefits include precise resource management, enhanced
-                  crop yield, reduced resource wastage, early disease detection,
-                  optimized irrigation, efficient pest management, and informed
-                  decision-making based on real-time data, leading to increased
-                  profitability for farmers.
+                The cost of subscribing to a Yiieldy app varies depending on the specific app you are interested in. You can sign up for free and enjoy a five-day trial period without needing payment during the sign-up process. Once your trial expires, you can opt for a pricing plan that suits your needs.
                 </div>
               </div>
             </div>
@@ -276,9 +260,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    Can you explain how your Agric Sense technology will help
-                    optimize resource usage and increase efficiency in my
-                    farming?
+                  What payment methods do you accept?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -301,12 +283,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Using our Agric Sense technology, we collect data on soil
-                  moisture, nutrient levels, and weather conditions. Our AI then
-                  processes this data to optimize resource usage, ensuring
-                  appropriate irrigation and fertilizer application. This
-                  data-driven approach enhances farming efficiency and minimizes
-                  resource wastage.
+                We accept debit or credit card payments.
                 </div>
               </div>
             </div>
@@ -321,8 +298,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    Are there specific types of sensors or devices associated
-                    with your Agric Sense technology?
+                  Experiencing problems paying?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -345,10 +321,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Yes, our Agric Sense technology utilizes various sensors such
-                  as soil moisture sensors, weather stations, drones, satellite
-                  imagery, GPS devices, and IoT-enabled equipment to collect
-                  relevant agricultural data.
+                Please consider trying an alternative payment method or contacting our support team for assistance.
                 </div>
               </div>
             </div>
@@ -363,8 +336,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    How does your Agric Sense technology aid in monitoring soil
-                    health and nutrient levels in our crops?
+                  What currencies can I use?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -387,11 +359,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Our Agric Sense technology employs soil sensors to measure
-                  moisture, pH levels, and nutrient content while the AI
-                  algorithms analyze this data to provide insights into soil
-                  health and nutrient levels, enabling you to make informed
-                  decisions about fertilizer application and land management.
+                Now, we are currently receiving only Nigerian Naira. If there are any currencies you are looking for that aren't presently available, please get in touch with our support team.
                 </div>
               </div>
             </div>
@@ -406,8 +374,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    Are there AI algorithms used to predict crop growth and
-                    yield based on Agric Sense data?
+                  Can I cancel anytime?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -430,10 +397,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Absolutely, AI algorithms process agric sense data to predict
-                  crop growth stages, yield estimates, and harvest times. These
-                  predictions assist farmers in planning and optimizing their
-                  harvests for maximum yield.
+                Yes, You can cancel your subscription at any time, either by accessing the app's billing page or by contacting us.
                 </div>
               </div>
             </div>
@@ -448,8 +412,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    How can we as farmers access and interpret the data
-                    collected through Agric Sense technology?
+                  I'm having trouble logging into my account; what should I do?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -472,11 +435,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  As farmers, you can access the data through user-friendly
-                  interfaces, mobile apps, or web platforms. The data is
-                  presented in a comprehensible format, and AI-generated
-                  insights are provided to help you interpret and utilize the
-                  information effectively.
+                Please try resetting your password initially. If this still doesn't work, please contact our support team with your account details, and we'll try to help!
                 </div>
               </div>
             </div>
@@ -491,8 +450,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    How does the Agric Sense technology ensure data privacy and
-                    security for farmers?
+                  How do I reset my password?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -515,10 +473,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Data privacy and security are maintained through encryption,
-                  restricted access, compliance with privacy regulations, and
-                  secure storage mechanisms. The technology follows best
-                  practices to safeguard sensitive agricultural data.
+                We'll need to reset your password if you can't remember it.
                 </div>
               </div>
             </div>
@@ -533,8 +488,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    What are the key considerations for farmers before
-                    implementing Agric Sense technology on their farms?
+                  Can you confirm if my data is secure?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -557,13 +511,7 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Key considerations include understanding the specific needs of
-                  the farm, budget allocation, data management strategies,
-                  integration with existing systems, and assessing the
-                  scalability and compatibility of the technology with the
-                  farm's future plans. Farmers should also consider the level of
-                  technical support and training provided by the technology
-                  provider.
+                Yes. We prioritize your data security and privacy. Your data is always safe; we never sell or share it with anyone. We use encrypted data transmission (SSL) and perform regular backups to ensure its safety. You can rest assured that your data remains exclusively yours.
                 </div>
               </div>
             </div>
@@ -578,9 +526,7 @@ export default function Faqs() {
               <div className="w-full p-4 text-left cursor-pointer">
                 <div className="flex items-center justify-between">
                   <span className="tracking-wide">
-                    I am into small-scale farming. Is Agric Sense technology
-                    compatible with different types and scales of agriculture,
-                    including small-scale farming?
+                  Can you please suggest other ways to demonstrate our data's safety?
                   </span>
                   <span
                     className={`transition-transform duration-500 transform fill-current ${handleRotate(
@@ -603,11 +549,164 @@ export default function Faqs() {
                 }}
               >
                 <div className="px-6 pb-4 text-gray-600">
-                  Yes, Agric Sense technology is designed to cater to various
-                  types and scales of agriculture, from small-scale farms to
-                  large agricultural operations. The technology is adaptable and
-                  can be customized to suit the specific needs of different
-                  farming setups.
+                  <ol className="list-decimal px-5 text-justify flex flex-col gap-2">
+                    <li>Yiieldy, our secure platform, is hosted on Microsoft Azure, a leading cloud hosting provider.  Please note that you can view the security and compliance standards that Azure meets by clicking on the following link: <a className="text-green" href="https://azure.microsoft.com/en-us/explore/trusted-cloud/">https://azure.microsoft.com/en-us/explore/trusted-cloud/</a></li>
+                    <li>All data is encrypted in transit using SSL/HTTPS encryption. Additionally, all passwords are one-way hashed using strong cryptography.</li>
+                    <li> We follow secure coding standards (OWASP) and limit access to customer accounts to authorized personnel for customer support.</li>
+                    <li>We minimize the collection of Personally Identifiable Information (PII) from our clients to what is necessary and never sell or share any of  your data with anyone.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ - Twelve */}
+          <div className="space-y-3">
+            <div
+              className="relative transition-all duration-700 border rounded-xl hover:shadow-2xl"
+              onClick={() => handleClick(12)}
+            >
+              <div className="w-full p-4 text-left cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <span className="tracking-wide">
+                  How can I remove my personal information from your database?
+                  </span>
+                  <span
+                    className={`transition-transform duration-500 transform fill-current ${handleRotate(
+                      1
+                    )}`}
+                  >
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div
+                className={`relative overflow-hidden transition-all duration-700 ${handleToggle(
+                  1
+                )}`}
+                style={{
+                  maxHeight: handleToggle(12) === "max-h-0" ? "0" : "100vh",
+                }}
+              >
+                <div className="px-6 pb-4 text-gray-600">
+                If you want all information about yourself removed from our database, please contact our support team with your email address. 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ - Thirteen */}
+          <div className="space-y-3">
+            <div
+              className="relative transition-all duration-700 border rounded-xl hover:shadow-2xl"
+              onClick={() => handleClick(13)}
+            >
+              <div className="w-full p-4 text-left cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <span className="tracking-wide">
+                  Is it possible for my employees to enter data into the Yiieldy application?
+                  </span>
+                  <span
+                    className={`transition-transform duration-500 transform fill-current ${handleRotate(
+                      1
+                    )}`}
+                  >
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div
+                className={`relative overflow-hidden transition-all duration-700 ${handleToggle(
+                  1
+                )}`}
+                style={{
+                  maxHeight: handleToggle(13) === "max-h-0" ? "0" : "100vh",
+                }}
+              >
+                <div className="px-6 pb-4 text-gray-600">
+                It is possible by creating additional users in the app.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ - Forteen */}
+          <div className="space-y-3">
+            <div
+              className="relative transition-all duration-700 border rounded-xl hover:shadow-2xl"
+              onClick={() => handleClick(14)}
+            >
+              <div className="w-full p-4 text-left cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <span className="tracking-wide">
+                  Could you please clarify the size or type of farmers that Yiieldy supports?
+                  </span>
+                  <span
+                    className={`transition-transform duration-500 transform fill-current ${handleRotate(
+                      1
+                    )}`}
+                  >
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div
+                className={`relative overflow-hidden transition-all duration-700 ${handleToggle(
+                  1
+                )}`}
+                style={{
+                  maxHeight: handleToggle(14) === "max-h-0" ? "0" : "100vh",
+                }}
+              >
+                <div className="px-6 pb-4 text-gray-600">
+                Our Yiieldy products are designed to be highly flexible, enabling us to assist a wide range of agricultural businesses. Yiieldy caters to all types of farms.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ - Fifteen */}
+          <div className="space-y-3">
+            <div
+              className="relative transition-all duration-700 border rounded-xl hover:shadow-2xl"
+              onClick={() => handleClick(15)}
+            >
+              <div className="w-full p-4 text-left cursor-pointer">
+                <div className="flex items-center justify-between">
+                  <span className="tracking-wide">
+                  How can I receive assistance with my account or obtain responses to my inquiries?
+                  </span>
+                  <span
+                    className={`transition-transform duration-500 transform fill-current ${handleRotate(
+                      1
+                    )}`}
+                  >
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div
+                className={`relative overflow-hidden transition-all duration-700 ${handleToggle(
+                  1
+                )}`}
+                style={{
+                  maxHeight: handleToggle(15) === "max-h-0" ? "0" : "100vh",
+                }}
+              >
+                <div className="px-6 pb-4 text-gray-600">
+                You can reach out to us anytime for assistance. You can also browse our online help resources or register for one of our online trainings.
                 </div>
               </div>
             </div>
@@ -616,7 +715,7 @@ export default function Faqs() {
       </div>
 
       {/* Question Section */}
-      <div className="overflow-hidden" id="contact">
+      <div className="overflow-hidden z-50" id="contact">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-center xl:flex-row">
             {/* Contact Form */}

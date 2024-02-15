@@ -93,9 +93,9 @@ export default function Terms() {
               Terms and Conditions
             </h2>
             <p className="mb-6 text-base font-normal tracking-wide text-green md:text-lg">
-              This covers the guidelines and expectations regarding user
-              behavior, responsibilities, and acceptable conduct while
-              interacting with the product or service.
+              These guidelines outline user behaviour, responsibilities, and
+              acceptable conduct while interacting with our products or
+              services.
             </p>
             <a
               href="#terms"
@@ -119,20 +119,17 @@ export default function Terms() {
       <div className="px-8 py-6 flex flex-col gap-3" id="terms">
         <section className="flex flex-col gap-3">
           {/* <h1 className="text-2xl">Terms and Conditions</h1> */}
-          <p className="text-gray-500">Last updated: (13/11/2023)</p>
+          <p className="text-gray-500">Last updated: (13/02/2024)</p>
           <p className="text-[13px] text-justify">
-            Please read these Terms and Conditions (these &quot;Terms&quot;)
-            carefully before using the Service (as defined below), either
-            through our website at www.Yiieldy.app (the
-            &quot;Website&quot;), the web-based platform at
-            platforms.Yiieldy.app (the &quot;Web App&quot;), or the
-            Yiieldy mobile application (the &quot;Mobile App&quot;), in each
-            case operated by Logicgraph Ltd working as Yiieldy
-            (&quot;Yiieldy&quot;, &quot;us,&quot; &quot;we,&quot;
-            &quot;our&quot;). All references to &quot;you&quot; or
-            &quot;your&quot; herein shall refer to the end customer purchasing
-            access to the website, Service, web app, or mobile app described
-            herein.
+            Please read these Terms and Conditions (these "Terms") carefully
+            before using the Service (as defined below), either through our
+            website at <a className="text-green font-bold" href="https://yiieldy.com">www.yiieldy.com</a> (the "Website"), the web-based platform
+            at <a className="text-green font-bold" href="https://app.yiieldy.com">app.yiieldy.com</a> (the "Web App"), or the Yiieldy mobile
+            applications (the "Mobile App"), in each case operated by Logicgraph
+            Ltd working as Yiieldy ("Yiieldy", "us," "we," "our"). All
+            references to "you" or "your" herein shall refer to the end customer
+            purchasing access to the website, Service, web app, or mobile app
+            described herein.
           </p>
         </section>
         <main className="flex flex-col gap-3">
@@ -141,8 +138,8 @@ export default function Terms() {
               Conditions of Use &amp; Acceptance of Terms
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  Yiieldy provides its Service, Website, Web App, and Mobile
-                  App to you, your employees, agents, or other representatives
+                  Yiieldy provides its Service, Website, Web App, and Mobile App
+                  to you, your employees, agents, or other representatives
                   (collectively referred to as &quot;Representatives&quot;),
                   subject to the Terms mentioned here. These Terms may be
                   updated from time to time without notice. We recommend you
@@ -151,8 +148,8 @@ export default function Terms() {
                   or Mobile App.
                 </p>
                 <p className="text-[13px] text-justify">
-                  If Yiieldy does not use or enforce any right or part of
-                  the Terms, that does not mean they are giving up that right or
+                  If Yiieldy does not use or enforce any right or part of the
+                  Terms, that does not mean they are giving up that right or
                   part of the Terms. These Terms are applicable from the date
                   you or your Representatives first log into, access, or use the
                   Service, which we call the &quot;Effective Date&quot;.
@@ -171,16 +168,15 @@ export default function Terms() {
                   privacy.
                 </p>
                 <p className="text-[13px] text-justify">
-                  Yiieldy is not responsible for the use or misuse of data
-                  by any third party, including, without limitation, providers
-                  of third-party products and services, the operator of any
-                  website linked to Yiieldy’s Website, or any Yiieldy
-                  customer, even if Yiieldy hosts such customer’s Website.
-                  You understand our privacy policy applies only to the Service,
-                  Website, Web App, or Mobile App. Yiieldy may notify you of
-                  leaks or exposure of private data, but except to the extent
-                  required by law, Yiieldy is not necessary to provide such
-                  notification.
+                  Yiieldy is not responsible for the use or misuse of data by
+                  any third party, including, without limitation, providers of
+                  third-party products and services, the operator of any website
+                  linked to Yiieldy’s Website, or any Yiieldy customer, even if
+                  Yiieldy hosts such customer’s Website. You understand our
+                  privacy policy applies only to the Service, Website, Web App,
+                  or Mobile App. Yiieldy may notify you of leaks or exposure of
+                  private data, but except to the extent required by law,
+                  Yiieldy is not necessary to provide such notification.
                 </p>
                 <p className="text-[13px] text-justify">
                   You will employ reasonable security precautions in using the
@@ -192,8 +188,8 @@ export default function Terms() {
                   other than in connection with your authorized use of the
                   Service, Website, Web App, or Mobile App following these
                   Terms. Except as expressly permitted in writing in advance by
-                  Yiieldy, you will not disclose confidential information to
-                  any third party. You will prevent the disclosure of personal
+                  Yiieldy, you will not disclose confidential information to any
+                  third party. You will prevent the disclosure of personal
                   information in your possession or control. Without limiting
                   the generality of the preceding, you will take reasonable
                   precautions to protect confidential information. You will not
@@ -203,24 +199,24 @@ export default function Terms() {
                 <p className="text-[13px] text-justify">
                   Notwithstanding the preceding, you may disclose confidential
                   information as required by applicable law or by a proper legal
-                  or governmental authority, provided you give Yiieldy
-                  advanced notice reasonably sufficient to allow Yiieldy to
-                  seek a protective order or otherwise to contest such required
+                  or governmental authority, provided you give Yiieldy advanced
+                  notice reasonably sufficient to allow Yiieldy to seek a
+                  protective order or otherwise to contest such required
                   disclosure and reasonably cooperate in such effort. You will
                   promptly notify Yiieldy in writing of any misuse or
                   misappropriation of confidential information that comes to
                   your attention. You will collaborate with Yiieldy to
                   investigate any such misappropriation and mitigate any damages
-                  caused. Upon termination of these Terms or Yiieldy’s
-                  written request, you will return all confidential information
-                  to Yiieldy and certify, in writing, the destruction of any
-                  copies thereof.
+                  caused. Upon termination of these Terms or Yiieldy’s written
+                  request, you will return all confidential information to
+                  Yiieldy and certify, in writing, the destruction of any copies
+                  thereof.
                 </p>
                 <p className="text-[13px] text-justify">
                   “Confidential Information” means any confidential or
-                  proprietary information Yiieldy provides to you in any
-                  form. However, Confidential Information does not include
-                  information that:
+                  proprietary information Yiieldy provides to you in any form.
+                  However, Confidential Information does not include information
+                  that:
                   <ol className="list-inside">
                     <li>
                       a. Is in your possession at the time of original
@@ -251,18 +247,17 @@ export default function Terms() {
               Description of Service
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  Yiieldy provides users with access to a collection of
-                  online and mobile tools designed to support farm management
-                  and record-keeping needs (collectively, the
-                  &quot;Service&quot;). You understand and agree that the
-                  Service may include advertisements, sponsored links,
-                  promotional listings, or paid placement. You also understand
-                  and agree that the Service may include certain communications
-                  from Yiieldy, such as Service announcements and
-                  administrative messages, and that these communications are
-                  considered part of the Service. Unless explicitly stated
-                  otherwise, any new features enhancing the current Service
-                  shall be subject to these Terms.
+                  Yiieldy provides users with access to a collection of online
+                  and mobile tools designed to support farm management and
+                  record-keeping needs (collectively, the &quot;Service&quot;).
+                  You understand and agree that the Service may include
+                  advertisements, sponsored links, promotional listings, or paid
+                  placement. You also understand and agree that the Service may
+                  include certain communications from Yiieldy, such as Service
+                  announcements and administrative messages, and that these
+                  communications are considered part of the Service. Unless
+                  explicitly stated otherwise, any new features enhancing the
+                  current Service shall be subject to these Terms.
                 </p>
               </div>
             </li>
@@ -273,42 +268,41 @@ export default function Terms() {
                   We grant you a limited non-exclusive, non-transferable,
                   non-sublicensable, revocable right to access and make internal
                   business use of this Website, Web App, and the Mobile App in
-                  accordance with these Terms. You acknowledge that Yiieldy
-                  may establish general practices and limits concerning use of
-                  the Website, Web App, and the Mobile App. You agree that
-                  Yiieldy has no responsibility or liability for the
-                  deletion or failure to store any messages, other
-                  communications, data, or other content maintained or
-                  transmitted by or to the Service. You acknowledge that
-                  Yiieldy reserves the right to deactivate accounts that
-                  violate our Terms. You further acknowledge that Yiieldy
-                  reserves the right to change these general practices and
-                  limits at any time, in its sole discretion, with or without
-                  notice. Certain areas of this Website, Web App, or the Mobile
-                  App may be restricted from access by you, and Yiieldy may
-                  further restrict access by you to any areas of this Website,
-                  Web App, and/or the Mobile App at any time in its sole and
-                  absolute discretion. Yiieldy reserves the right at any
-                  time to modify or discontinue, temporarily or permanently, the
-                  Service (or any part thereof) with or without notice. You
-                  agree that Yiieldy shall not be liable to you or to any
-                  third party for any modification, suspension or discontinuance
-                  of the Service or any part of the Service. We reserve all
-                  rights to terminate accounts, edit or remove content, and
-                  cancel the Service in our sole discretion. You agree that
-                  Yiieldy, in its sole discretion, may terminate your
-                  password, account (or any part thereof), or use of the Service
-                  and may remove and discard any data or content within the
-                  Service for any reason, including, without limitation, if
-                  Yiieldy believes that you have violated these Terms. You
-                  agree that any termination of your access to the Service under
-                  any provision of these Terms may occur without prior notice to
-                  you, and you acknowledge and agree that Yiieldy may
-                  immediately deactivate or delete your account and all related
-                  information and files in your account and may bar any further
-                  access to such files and information. Further, you agree that
-                  Yiieldy shall not be liable to you or any third party for
-                  any termination of your access to the Service.
+                  accordance with these Terms. You acknowledge that Yiieldy may
+                  establish general practices and limits concerning use of the
+                  Website, Web App, and the Mobile App. You agree that Yiieldy
+                  has no responsibility or liability for the deletion or failure
+                  to store any messages, other communications, data, or other
+                  content maintained or transmitted by or to the Service. You
+                  acknowledge that Yiieldy reserves the right to deactivate
+                  accounts that violate our Terms. You further acknowledge that
+                  Yiieldy reserves the right to change these general practices
+                  and limits at any time, in its sole discretion, with or
+                  without notice. Certain areas of this Website, Web App, or the
+                  Mobile App may be restricted from access by you, and Yiieldy
+                  may further restrict access by you to any areas of this
+                  Website, Web App, and/or the Mobile App at any time in its
+                  sole and absolute discretion. Yiieldy reserves the right at
+                  any time to modify or discontinue, temporarily or permanently,
+                  the Service (or any part thereof) with or without notice. You
+                  agree that Yiieldy shall not be liable to you or to any third
+                  party for any modification, suspension or discontinuance of
+                  the Service or any part of the Service. We reserve all rights
+                  to terminate accounts, edit or remove content, and cancel the
+                  Service in our sole discretion. You agree that Yiieldy, in its
+                  sole discretion, may terminate your password, account (or any
+                  part thereof), or use of the Service and may remove and
+                  discard any data or content within the Service for any reason,
+                  including, without limitation, if Yiieldy believes that you
+                  have violated these Terms. You agree that any termination of
+                  your access to the Service under any provision of these Terms
+                  may occur without prior notice to you, and you acknowledge and
+                  agree that Yiieldy may immediately deactivate or delete your
+                  account and all related information and files in your account
+                  and may bar any further access to such files and information.
+                  Further, you agree that Yiieldy shall not be liable to you or
+                  any third party for any termination of your access to the
+                  Service.
                 </p>
               </div>
             </li>
@@ -333,12 +327,12 @@ export default function Terms() {
                   you will use the Service in accordance with all applicable
                   laws, rules, and regulations; as well as any of Yiieldy’s
                   standard published policies, if any, in effect as of the
-                  Effective Date, and as may be amended by Yiieldy, in its
-                  sole discretion, from time to time. Although Yiieldy has
-                  no obligation to monitor your use of Service Website, Web App,
-                  and/or Mobile App, Yiieldy may do so and may prohibit any
-                  use of any of the foregoing if it reasonably believes may be
-                  (or alleged to be) in violation of these Terms.
+                  Effective Date, and as may be amended by Yiieldy, in its sole
+                  discretion, from time to time. Although Yiieldy has no
+                  obligation to monitor your use of Service Website, Web App,
+                  and/or Mobile App, Yiieldy may do so and may prohibit any use
+                  of any of the foregoing if it reasonably believes may be (or
+                  alleged to be) in violation of these Terms.
                 </p>
               </div>
             </li>
@@ -355,27 +349,26 @@ export default function Terms() {
                   credit/debit card as you notify us to use. The monthly fee
                   will be charged on the date that corresponds with the date you
                   activated your account. You can access your account at
-                  Yiieldy.app to view information regarding your next
-                  renewal. Billing for the Service to which you have subscribed
-                  will continue month-to-month unless and until you cancel your
+                  Yiieldy.app to view information regarding your next renewal.
+                  Billing for the Service to which you have subscribed will
+                  continue month-to-month unless and until you cancel your
                   subscription or we terminate your account. You must cancel
                   your subscription before it renews each month to avoid billing
                   the following month&#39;s charge to your credit/debit card.
-                  Subscription fees are fully earned upon payment, and
-                  Yiieldy reserves the right to decline issuing refunds for
-                  partial months. You may cancel your subscription anytime by
-                  logging into your Yiieldy account. Yiieldy reserves
-                  the right from time to time to increase the subscription fees
-                  charged for its Service and shall provide ample notice to
-                  customers before any change that would increase their
-                  subscription fee. In addition to any other rights granted to
-                  Yiieldy herein, Yiieldy reserves the right to suspend
-                  your access to and use of the Service if you fail to pay any
-                  undisputed amount owed within ten (10) days of your receipt of
-                  written notice from Yiieldy that your payment is overdue.
-                  Overdue amounts are subject to a late charge of 2.0% per
-                  month, or the maximum permitted by law, whichever is less,
-                  plus all collection expenses.​
+                  Subscription fees are fully earned upon payment, and Yiieldy
+                  reserves the right to decline issuing refunds for partial
+                  months. You may cancel your subscription anytime by logging
+                  into your Yiieldy account. Yiieldy reserves the right from
+                  time to time to increase the subscription fees charged for its
+                  Service and shall provide ample notice to customers before any
+                  change that would increase their subscription fee. In addition
+                  to any other rights granted to Yiieldy herein, Yiieldy
+                  reserves the right to suspend your access to and use of the
+                  Service if you fail to pay any undisputed amount owed within
+                  ten (10) days of your receipt of written notice from Yiieldy
+                  that your payment is overdue. Overdue amounts are subject to a
+                  late charge of 2.0% per month, or the maximum permitted by
+                  law, whichever is less, plus all collection expenses.​
                 </p>
               </div>
               <div className="flex flex-col gap-3 mt-2">
@@ -388,30 +381,30 @@ export default function Terms() {
                   during account activation or to such other replacement
                   credit/debit card as you notify us to use. The annual fee will
                   be charged on the date corresponding to the date you activated
-                  your account. You can access your account at Yiieldy.app
-                  to view information regarding your next renewal date and rate.
+                  your account. You can access your account at Yiieldy.app to
+                  view information regarding your next renewal date and rate.
                   Billing for the Service to which you have subscribed will
                   continue annually unless and until you cancel your
                   subscription or we terminate your account. You must cancel
                   your subscription before it renews to avoid billing the
                   following year&#39;s charge to your credit/debit card.
-                  Subscription fees are fully earned upon payment, and
-                  Yiieldy reserves the right to decline issuing refunds for
-                  partial years and reduce your refund amount by the amount of
-                  the credit/debit card processing fee of your original
-                  credit/debit card transaction. You may cancel your
-                  subscription anytime by logging into your Yiieldy account.
-                  Yiieldy reserves the right from time to time to increase
-                  the subscription fees charged for its Service and shall
-                  provide ample notice to customers before any change that would
-                  increase their subscription fee. In addition to any other
-                  rights granted to Yiieldy herein, Yiieldy reserves the
-                  right to suspend your access to and use of the Service if you
-                  fail to pay any undisputed amount owed within ten (10) days of
-                  your receipt of written notice from Yiieldy that your
-                  payment is overdue. Overdue amounts are subject to a late
-                  charge of 2.0% per month, or the maximum permitted by law,
-                  whichever is less, plus all collection expenses.
+                  Subscription fees are fully earned upon payment, and Yiieldy
+                  reserves the right to decline issuing refunds for partial
+                  years and reduce your refund amount by the amount of the
+                  credit/debit card processing fee of your original credit/debit
+                  card transaction. You may cancel your subscription anytime by
+                  logging into your Yiieldy account. Yiieldy reserves the right
+                  from time to time to increase the subscription fees charged
+                  for its Service and shall provide ample notice to customers
+                  before any change that would increase their subscription fee.
+                  In addition to any other rights granted to Yiieldy herein,
+                  Yiieldy reserves the right to suspend your access to and use
+                  of the Service if you fail to pay any undisputed amount owed
+                  within ten (10) days of your receipt of written notice from
+                  Yiieldy that your payment is overdue. Overdue amounts are
+                  subject to a late charge of 2.0% per month, or the maximum
+                  permitted by law, whichever is less, plus all collection
+                  expenses.
                 </p>
               </div>
             </li>
@@ -484,27 +477,26 @@ export default function Terms() {
                   and/or the Mobile App, or the Service or presented by other
                   users or our advertisers is protected by copyright, trademark,
                   Service mark and patent law, as well as other proprietary
-                  rights and laws. Except as expressly authorized by
-                  Yiieldy, other users or advertisers, you agree not to
-                  modify, rent, lease, loan, sell, distribute, or create
-                  derivative works based on the Service, the Website, Web App,
-                  and/or the Mobile App contents, in whole or in part.
+                  rights and laws. Except as expressly authorized by Yiieldy,
+                  other users or advertisers, you agree not to modify, rent,
+                  lease, loan, sell, distribute, or create derivative works
+                  based on the Service, the Website, Web App, and/or the Mobile
+                  App contents, in whole or in part.
                 </p>
                 <p className="text-[13px] text-justify">
-                  You acknowledge that Yiieldy may continually develop,
-                  deliver, and provide to you on-going innovation to the
-                  Website, Web App, and/or the Mobile App in the form of new
-                  features, functionality, and efficiencies. Accordingly,
-                  Yiieldy reserves the right to modify the Website, Web App,
-                  and/or the Mobile App, from time to time. Some modifications
-                  will be provided to you at no additional charge. In the event
-                  Yiieldy adds additional functionality to a particular
-                  Service, Yiieldy may condition the implementation of such
-                  modifications on your payment of additional fees provided you
-                  may continue to use the version of the Website, Web App,
-                  and/or the Mobile App that Yiieldy makes generally
-                  available (without such features) without paying additional
-                  fees.
+                  You acknowledge that Yiieldy may continually develop, deliver,
+                  and provide to you on-going innovation to the Website, Web
+                  App, and/or the Mobile App in the form of new features,
+                  functionality, and efficiencies. Accordingly, Yiieldy reserves
+                  the right to modify the Website, Web App, and/or the Mobile
+                  App, from time to time. Some modifications will be provided to
+                  you at no additional charge. In the event Yiieldy adds
+                  additional functionality to a particular Service, Yiieldy may
+                  condition the implementation of such modifications on your
+                  payment of additional fees provided you may continue to use
+                  the version of the Website, Web App, and/or the Mobile App
+                  that Yiieldy makes generally available (without such features)
+                  without paying additional fees.
                 </p>
               </div>
             </li>
@@ -512,13 +504,13 @@ export default function Terms() {
               Trademarks
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  The Yiieldy trademarks, service marks, logos, product
-                  names, and service names, collectively referred to as
-                  &quot;Yiieldy Marks,&quot; are the intellectual property
-                  of Yiieldy. You must obtain Yiieldy&#39;s prior
-                  permission before displaying or using any of the Yiieldy
-                  Marks. These Terms do not grant you a license to use any of
-                  the Yiieldy Marks by implication, estoppel, or otherwise.
+                  The Yiieldy trademarks, service marks, logos, product names,
+                  and service names, collectively referred to as &quot;Yiieldy
+                  Marks,&quot; are the intellectual property of Yiieldy. You
+                  must obtain Yiieldy&#39;s prior permission before displaying
+                  or using any of the Yiieldy Marks. These Terms do not grant
+                  you a license to use any of the Yiieldy Marks by implication,
+                  estoppel, or otherwise.
                 </p>
               </div>
             </li>
@@ -526,11 +518,11 @@ export default function Terms() {
               Intellectual Property Infringement
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  Yiieldy respects the intellectual property of others, and
-                  we expect our users to do the same. If you believe that your
-                  work has been infringed or your intellectual property rights
-                  have been otherwise violated, please provide Yiieldy the
-                  following information:
+                  Yiieldy respects the intellectual property of others, and we
+                  expect our users to do the same. If you believe that your work
+                  has been infringed or your intellectual property rights have
+                  been otherwise violated, please provide Yiieldy the following
+                  information:
                 </p>
                 <p className="text-[13px] text-justify">
                   <ol className="list-inside">
@@ -596,26 +588,26 @@ export default function Terms() {
                   Aggregate Data and Analyses for any purpose, including, but
                   not limited to product improvement and marketing to other
                   customers of the Website, Web App, and/or Mobile App;
-                  provided, however, that Yiieldy will not distribute
-                  Aggregate Data and Analyses in a manner that is identifiable
-                  as Your Data.
+                  provided, however, that Yiieldy will not distribute Aggregate
+                  Data and Analyses in a manner that is identifiable as Your
+                  Data.
                 </p>
                 <p className="text-[13px] text-justify">
                   Your Data must be your own and must not infringe on any third
-                  party’s rights. Yiieldy reserves the right to remove any
-                  of Your Data from the Website, Web App, and/or the Mobile App
-                  at any time and for any reason, without notice.
+                  party’s rights. Yiieldy reserves the right to remove any of
+                  Your Data from the Website, Web App, and/or the Mobile App at
+                  any time and for any reason, without notice.
                 </p>
                 <p className="text-[13px] text-justify">
                   From time to time, You or Representatives may submit to
                   Yiieldy comments, questions, enhancement requests,
                   suggestions, ideas, process descriptions or other information
                   related to the Service (“Feedback”). Yiieldy shall own all
-                  Feedback, you hereby assign such Feedback to Yiieldy, and
-                  you agree that Yiieldy has all rights to use and
-                  incorporate Feedback into the Website, Web App, and/or the
-                  Mobile App without restriction or payment to you. No rights
-                  are granted to you other than as expressly set forth herein.
+                  Feedback, you hereby assign such Feedback to Yiieldy, and you
+                  agree that Yiieldy has all rights to use and incorporate
+                  Feedback into the Website, Web App, and/or the Mobile App
+                  without restriction or payment to you. No rights are granted
+                  to you other than as expressly set forth herein.
                 </p>
               </div>
             </li>
@@ -743,17 +735,16 @@ export default function Terms() {
                 <p className="text-[13px] text-justify">
                   The Website, Web App, and/or the Mobile App may contain links
                   to third-party websites or services that are not owned or
-                  controlled by Yiieldy. Yiieldy has no control over, is
-                  not responsible for the availability of such external sites or
+                  controlled by Yiieldy. Yiieldy has no control over, is not
+                  responsible for the availability of such external sites or
                   resources, does not endorse, and assumes no responsibility for
                   the content, privacy policies, advertising, products, service,
                   or practices of any third-party websites or services. You
-                  acknowledge and agree that Yiieldy shall not be
-                  responsible or liable, directly, or indirectly, for any damage
-                  or loss caused or alleged to be caused by or in connection
-                  with use of or reliance on any such content, goods, or
-                  services available on or through any such websites or
-                  services.
+                  acknowledge and agree that Yiieldy shall not be responsible or
+                  liable, directly, or indirectly, for any damage or loss caused
+                  or alleged to be caused by or in connection with use of or
+                  reliance on any such content, goods, or services available on
+                  or through any such websites or services.
                 </p>
                 <p className="text-[13px] text-justify">
                   You further acknowledge that your access to and use of the
@@ -763,11 +754,10 @@ export default function Terms() {
                   By using the Service, you consent to the Website, Web App, or
                   Mobile App interacting with and receiving metadata from the
                   Third-Party Service and returning metadata to the Third-Party
-                  Service. Yiieldy IS NOT LIABLE OR RESPONSIBLE FOR
-                  THIRD-PARTY SERVICE. EXCEPT AS OTHERWISE EXPRESSLY AGREED
-                  BETWEEN US AND YOU IN WRITING, YOU ARE SOLELY RESPONSIBLE FOR
-                  CONFIGURING THE SERVICE, WEB APP, OR MOBILE APP TO ACHIEVE ITS
-                  DESIRED GOALS.
+                  Service. Yiieldy IS NOT LIABLE OR RESPONSIBLE FOR THIRD-PARTY
+                  SERVICE. EXCEPT AS OTHERWISE EXPRESSLY AGREED BETWEEN US AND
+                  YOU IN WRITING, YOU ARE SOLELY RESPONSIBLE FOR CONFIGURING THE
+                  SERVICE, WEB APP, OR MOBILE APP TO ACHIEVE ITS DESIRED GOALS.
                 </p>
               </div>
             </li>
@@ -788,15 +778,15 @@ export default function Terms() {
                   </li>
                   <li>
                     b. Your use of the website, web app, or mobile app, and the
-                    service is at your sole risk. Yiieldy expressly
-                    disclaims all warranties of any kind, whether express or
-                    implied, including but not limited to the implied warranties
-                    of merchantability, fitness for a particular purpose, and
+                    service is at your sole risk. Yiieldy expressly disclaims
+                    all warranties of any kind, whether express or implied,
+                    including but not limited to the implied warranties of
+                    merchantability, fitness for a particular purpose, and
                     non-infringement.
                   </li>
                   <li>
-                    c. Yiieldy makes no warranty that (i) the website, web
-                    app, or the mobile app, or the service will meet your
+                    c. Yiieldy makes no warranty that (i) the website, web app,
+                    or the mobile app, or the service will meet your
                     requirements; (ii) the website, web app, or the mobile app,
                     or the service will be uninterrupted, timely, secure, or
                     error-free; (iii) the results that may be obtained from the
@@ -809,9 +799,9 @@ export default function Terms() {
                   </li>
                   <li>
                     No information, whether oral or written, obtained by you
-                    from Yiieldy or through the website, web app, or the
-                    mobile app, or the service shall create any warranty not
-                    expressly stated in the terms.
+                    from Yiieldy or through the website, web app, or the mobile
+                    app, or the service shall create any warranty not expressly
+                    stated in the terms.
                   </li>
                 </ol>
               </div>
@@ -893,8 +883,8 @@ export default function Terms() {
                   suspend access to any Service for the following reasons: (a) a
                   threat to the technical security or technical integrity of the
                   Service; (b) any undisputed amount due under the Agreement is
-                  not received by Yiieldy within five (5) days after it was
-                  due, (c) breach or violation by you of any laws, rules, or
+                  not received by Yiieldy within five (5) days after it was due,
+                  (c) breach or violation by you of any laws, rules, or
                   regulations in connection with your acts or omissions related
                   to these Terms, or (d) use of the Service in a manner that
                   overburdens the Service or otherwise impacts the integrity or
@@ -902,14 +892,14 @@ export default function Terms() {
                 </p>
                 <p className="text-[13px] text-justify">
                   Upon termination or expiration of the Terms for any reason,
-                  (a) any amounts owed to Yiieldy prior to such termination
-                  or expiration will be immediately due and payable, (b) all
+                  (a) any amounts owed to Yiieldy prior to such termination or
+                  expiration will be immediately due and payable, (b) all
                   licensed, and access rights granted will immediately cease to
                   exist, (c) you shall discontinue all access and use of the
-                  Website, Web App, or the Mobile App, and Yiieldy may
-                  disable access thereto. All sections which are expressed to
-                  survive, or which by their nature should survive, will survive
-                  any expiration or termination of the Agreement.
+                  Website, Web App, or the Mobile App, and Yiieldy may disable
+                  access thereto. All sections which are expressed to survive,
+                  or which by their nature should survive, will survive any
+                  expiration or termination of the Agreement.
                 </p>
               </div>
             </li>
@@ -970,11 +960,11 @@ export default function Terms() {
               Use of Name and Logos
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  Yiieldy may include your name and logo: (a) on the Website
-                  and in its marketing materials, identifying you as a user of
-                  the Website, Web App, and/or the Mobile App, and/or (b) in a
-                  press release favorably publicizing your use of the Website,
-                  Web App, and/or the Mobile App.
+                  Yiieldy may include your name and logo: (a) on the Website and
+                  in its marketing materials, identifying you as a user of the
+                  Website, Web App, and/or the Mobile App, and/or (b) in a press
+                  release favorably publicizing your use of the Website, Web
+                  App, and/or the Mobile App.
                 </p>
               </div>
             </li>
@@ -982,8 +972,8 @@ export default function Terms() {
               Assignment
               <div className="flex flex-col gap-3 mt-2">
                 <p className="text-[13px] text-justify">
-                  Yiieldy may assign, transfer, and subcontract its rights
-                  or obligations under these Terms without notifying you or
+                  Yiieldy may assign, transfer, and subcontract its rights or
+                  obligations under these Terms without notifying you or
                   obtaining your consent. However, you may not assign, transfer,
                   or subcontract any of your rights and obligations under these
                   Terms without Yiieldy&#39;s written consent.
@@ -996,9 +986,9 @@ export default function Terms() {
                 <p className="text-[13px] text-justify">
                   These Terms, including any legal notices and disclaimers on
                   the website, constitute the entire agreement between you and
-                  Yiieldy regarding your use of the website, web app, or
-                  mobile app and supersede all prior agreements and
-                  understandings concerning the same.
+                  Yiieldy regarding your use of the website, web app, or mobile
+                  app and supersede all prior agreements and understandings
+                  concerning the same.
                 </p>
               </div>
             </li>
@@ -1013,9 +1003,9 @@ export default function Terms() {
                   laws of Nigeria, without regard to principles of conflict of
                   laws. You submit to the jurisdiction of the courts located
                   within the border of Nigeria to resolve any disputes between
-                  you and Yiieldy. You agree that regardless of any statute
-                  or law to the contrary, any claim or cause of action arising
-                  from or related to the use of the Service or the Terms must be
+                  you and Yiieldy. You agree that regardless of any statute or
+                  law to the contrary, any claim or cause of action arising from
+                  or related to the use of the Service or the Terms must be
                   filed within one year after such claim or cause of action
                   arose or be forever barred.
                 </p>

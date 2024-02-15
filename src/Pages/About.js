@@ -164,9 +164,7 @@ export default function About() {
                   </span>
                 </h2> */}
               <h1 className="mb-6 font-sans text-3xl font-bold  text-gray-900 sm:text-4xl">
-                Yiieldy is a leading AgTech company revolutionizing the
-                agricultural industry with AI products to ensure a sustainable
-                future.
+              Yiieldy is a leading AgTech platform revolutionizing the agricultural industry with AI products to ensure a sustainable future
               </h1>
               <div className="lg:pr-20">
                 <p className="text-base text-justify text-gray-700 md:text-lg">
@@ -187,7 +185,7 @@ export default function About() {
             className="flex flex-col justify-center sm:items-center"
             id="pres-farm"
           >
-            <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            {/* <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
               <div className="grid gap-6 row-gap-10 lg:grid-cols-1">
                 <h1 className="text-4xl font-bold px-10">
                   Unlock the power of AI with Yiieldy
@@ -274,11 +272,11 @@ export default function About() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Stats */}
-          <div className="bg-white">
+          {/* <div className="bg-white">
             <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
               <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0"></div>
               <div className="relative grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
@@ -320,7 +318,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />

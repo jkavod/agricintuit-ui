@@ -341,7 +341,7 @@ export default function Terms() {
               <div className="flex flex-col gap-3 mt-2">
                 <h1 className="text-[13px]">Monthly</h1>
                 <p className="text-[13px] text-justify">
-                  As an Yiieldy customer, you expressly agree that we are
+                  As a Yiieldy customer, you expressly agree that we are
                   authorized to charge you a monthly fee at the rate set when
                   you registered for the Service and that we are allowed to
                   charge renewal fees to the credit/debit card you provided
@@ -374,7 +374,7 @@ export default function Terms() {
               <div className="flex flex-col gap-3 mt-2">
                 <h1 className="text-[13px]">Yearly</h1>
                 <p className="text-[13px] text-justify">
-                  As an Yiieldy customer, you expressly agree that we are
+                  As a Yiieldy customer, you expressly agree that we are
                   authorized to charge you an annual fee at the rate set when
                   you registered for the Service and that we are allowed to
                   charge renewal fees to the credit/debit card you provided

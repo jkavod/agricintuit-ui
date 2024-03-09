@@ -15,6 +15,30 @@ const navigation = [
 
 export default function Contact() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, phone, subject, message } = formData;
+    const destinationEmail = "contactus@yiieldy.com";
+    const mailtoLink = `mailto:${destinationEmail}?subject=${encodeURIComponent(
+      subject
+    )}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    // Open the user's email client with the pre-populated data
+    window.location.href = mailtoLink;
+  };
 
   return (
     <div className="bg-white">
@@ -122,7 +146,10 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="w-full max-w-2xl xl:px-8 xl:w-[100%]">
               <div className="relative">
-                <div className="relative bg-white rounded shadow-2xl p-7 sm:p-10" id="text">
+                <div
+                  className="relative bg-white rounded shadow-2xl p-7 sm:p-10"
+                  id="text"
+                >
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                     Drop us a message for any query
                   </h3>
@@ -130,7 +157,7 @@ export default function Contact() {
                     Feel free to reach out with any questions or concerns by
                     sending us a message. We're here to assist you!
                   </p>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="grid gap-4 lg:grid-cols-2 sm:grid-cols-1">
                       <div className="mb-1 sm:mb-2">
                         <label
@@ -146,6 +173,7 @@ export default function Contact() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="name"
                           name="name"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -161,8 +189,9 @@ export default function Contact() {
                           type="tel"
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="email"
-                          name="phoneNumber"
+                          name="phone"
                           pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -179,6 +208,7 @@ export default function Contact() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="email"
                           name="email"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -195,6 +225,7 @@ export default function Contact() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="subject"
                           name="subject"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -213,6 +244,7 @@ export default function Contact() {
                           className="flex-grow w-full h-32 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="message"
                           name="message"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mt-4 mb-2 sm:mb-4">
@@ -237,12 +269,12 @@ export default function Contact() {
                     <h6 className="mb-2 font-semibold leading-5">Email Us:</h6>
                     <p className="text-sm text-gray-900 text-center">
                       <a
-                        href="mailto:contactus@logicgraph.io"
+                        href="mailto:contactus@yiieldy.com"
                         className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
                       >
                         <span className="text-gray-800 font-bold text-xl">
                           <span className="text-xl font-normal text-gray-700">
-                            contactus@logicgraph.io
+                            contactus@yiieldy.com
                           </span>
                         </span>
                       </a>
@@ -269,15 +301,15 @@ export default function Contact() {
                 </div> */}
                 <div className="duration-300 transform bg-white border-l-4 border-green hover:-translate-y-2">
                   <div className="h-full p-5 border border-l-0 rounded-r shadow-sm flex justify-center items-center flex-col">
-                    <h6 className="mb-2 font-semibold leading-5">Call Us</h6>
+                    <h6 className="mb-2 font-semibold leading-5">Chat Us</h6>
                     <p className="text-sm text-gray-900 text-center">
                       <a
-                        href="tel:+(234)8055316857"
+                        href="https://wa.me/message/HN4LGKGKTJCKH1"
                         className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
                       >
                         <span className="text-gray-800 font-bold text-xl">
                           <span className="text-xl font-normal text-gray-700">
-                            +(234)8055316857
+                            +(234)9139218797
                           </span>
                         </span>
                       </a>

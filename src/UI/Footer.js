@@ -1,4 +1,4 @@
-import { Linkedin, Logo, Twitter } from "../Assets";
+import { Instagram, Linkedin, Logo, Twitter } from "../Assets";
 import "./Style.css";
 import { Link } from "react-router-dom";
 
@@ -162,13 +162,13 @@ export default function Footer() {
                 </li> */}
                 <li>
                   <a
-                    href="tel:+(234)8055316857"
+                    href="https://wa.me/message/HN4LGKGKTJCKH1"
                     className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
                     <span className="text-gray-800 font-bold lg:text-xl sm:text-sm">
-                      Call Us:{" "}
+                      Chat Us:{" "}
                       <span className="lg:text-xl sm:text-sm font-normal text-gray-700">
-                        +(234)8055316857
+                        +(234)9139218797
                       </span>
                     </span>
                   </a>
@@ -181,7 +181,7 @@ export default function Footer() {
                     <span className="text-gray-800 font-bold lg:text-xl sm:text-sm">
                       Email Us:{" "}
                       <span className="lg:text-xl sm:text-sm font-normal text-gray-700">
-                        contactus@logicgraph.io
+                      contactus@yiieldy.com
                       </span>
                     </span>
                   </a>
@@ -234,15 +234,17 @@ export default function Footer() {
             © Copyright {currentYear} Yiieldy All rights reserved.
           </p>
           <div className="flex items-center mt-4 space-x-4 sm:mt-0">
-            {/* <a
-              href="/"
+            <a
+              href="https://www.instagram.com/yiieldy_marketing"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400 text-xl hover:-translate-y-1 hover:p-2 bg-green p-2 rounded-full"
+              target="_blank"
             >
-              <img src={Twitter} alt="Twitter" className="h-5" />
-            </a> */}
+              <img src={Instagram} alt="Twitter" className="h-5" />
+            </a>
             <a
               href="https://www.linkedin.com/company/yiieldy/"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400 hover:-translate-y-1 hover:p-2 bg-green p-2 rounded-full"
+              target="_blank"
             >
               <img src={Linkedin} alt="Linkedin" className="h-5" />
             </a>

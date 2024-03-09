@@ -15,6 +15,30 @@ const navigation = [
 
 export default function Faqs() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, phone, subject, message } = formData;
+    const destinationEmail = "contactus@yiieldy.com";
+    const mailtoLink = `mailto:${destinationEmail}?subject=${encodeURIComponent(
+      subject
+    )}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    // Open the user's email client with the pre-populated data
+    window.location.href = mailtoLink;
+  };
 
   const [activeTab, setActiveTab] = useState(0);
 
@@ -732,7 +756,7 @@ export default function Faqs() {
                     Feel free to reach out with any questions or concerns by
                     sending us a message. We're here to assist you!
                   </p> */}
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="grid gap-4 lg:grid-cols-2 sm:grid-cols-1">
                       <div className="mb-1 sm:mb-2">
                         <label
@@ -748,6 +772,7 @@ export default function Faqs() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="name"
                           name="name"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -765,6 +790,7 @@ export default function Faqs() {
                           id="email"
                           name="phoneNumber"
                           pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -781,6 +807,7 @@ export default function Faqs() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="email"
                           name="email"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mb-1 sm:mb-2">
@@ -797,6 +824,7 @@ export default function Faqs() {
                           className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="subject"
                           name="subject"
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -815,6 +843,7 @@ export default function Faqs() {
                           className="flex-grow w-full h-32 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green focus:outline-none focus:shadow-outline"
                           id="message"
                           name="message"
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="mt-4 mb-2 sm:mb-4">

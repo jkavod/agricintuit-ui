@@ -93,7 +93,9 @@ export default function Privacy() {
               Privacy Policy
             </h2>
             <p className="mb-6 text-base font-normal tracking-wide text-green md:text-lg">
-            This policy details clear and concise instructions for users to opt out of specific data collection, marketing communications, or other activities outlined in the privacy policy.
+              This policy details clear and concise instructions for users to
+              opt out of specific data collection, marketing communications, or
+              other activities outlined in the privacy policy.
             </p>
             <a
               href="#privacy"
@@ -114,7 +116,10 @@ export default function Privacy() {
       </div>
 
       {/* PRIVACY POLICY SECTION */}
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="privacy">
+      <div
+        className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        id="privacy"
+      >
         <div className="max-w-screen-lg sm:mx-auto">
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
@@ -125,7 +130,11 @@ export default function Privacy() {
                   when you use our services. We are committed to respecting your
                   privacy and ensuring the confidentiality and security of your
                   personal information. */}
-                  This document explains how we collect, use, disclose, and protect your personal information when you utilize our services. We are committed to respecting your privacy and ensuring the confidentiality and security of your personal information.
+                  This document explains how we collect, use, disclose, and
+                  protect your personal information when you utilize our
+                  services. We are committed to respecting your privacy and
+                  ensuring the confidentiality and security of your personal
+                  information.
                 </p>
               </div>
             </div>
@@ -134,17 +143,21 @@ export default function Privacy() {
             <div className="mb-4 lg:mb-0">
               <div className="relative">
                 <p>
-                We may collect various types of information, including but not limited to:
+                  We may collect various types of information, including but not
+                  limited to:
                 </p>
                 <ul className="list-disc px-5" id="priv-ul">
                   <li>
-                  Personal Information: Name, contact information, email address, etc.
+                    Personal Information: Name, contact information, email
+                    address, etc.
                   </li>
                   <li>
-                  Usage Information: Data about your interaction with our services, including log data and analytics.
+                    Usage Information: Data about your interaction with our
+                    services, including log data and analytics.
                   </li>
                   <li>
-                  Cookies and Tracking: Information obtained through cookies and similar technologies.
+                    Cookies and Tracking: Information obtained through cookies
+                    and similar technologies.
                   </li>
                 </ul>
               </div>
@@ -243,20 +256,24 @@ export default function Privacy() {
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
               <h2 className="mb-4 text-xl font-bold leading-none sm:text-2xl">
-              Third-Party Links:
+                Third-Party Links:
               </h2>
               <p>
-              Our services may contain links to third-party websites. We are not responsible for the content or privacy practices of these websites.
+                Our services may contain links to third-party websites. We are
+                not responsible for the content or privacy practices of these
+                websites.
               </p>
             </div>
           </div>
           <div className="flex flex-col items-start py-4 transform rounded sm:px-4 lg:flex-row">
             <div className="mb-4 lg:mb-0">
               <h2 className="mb-4 text-xl font-bold leading-none sm:text-2xl">
-              Changes to this Privacy Policy:
+                Changes to this Privacy Policy:
               </h2>
               <p>
-              We may update this Privacy Policy periodically. Any changes will be posted on this page, and the effective date will be updated accordingly.
+                We may update this Privacy Policy periodically. Any changes will
+                be posted on this page, and the effective date will be updated
+                accordingly.
               </p>
             </div>
           </div>
@@ -267,17 +284,41 @@ export default function Privacy() {
               </h2>
               <div className="relative">
                 <p>
-                If you have any questions or concerns about this Privacy Policy, please contact us at:
+                  If you have any questions or concerns about this Privacy
+                  Policy, please contact us at:
                 </p>
                 <ul className="list-disc px-5" id="priv-ul">
                   <li>
-                   Tel: +(234)8055316857
+                    <a
+                      href="https://wa.me/message/HN4LGKGKTJCKH1"
+                      className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
+                    >
+                      <span className="text-gray-800 font-bold lg:text-xl sm:text-sm">
+                        Chat Us:{" "}
+                        <span className="lg:text-xl sm:text-sm font-normal text-gray-700">
+                          +(234)9139218797
+                        </span>
+                      </span>
+                    </a>
                   </li>
-                  <li>
-                  E-mail: contactus@logicgraph.io
+                  <li className="text-sm text-gray-900">
+                    <a
+                      href="mailto:contactus@yiieldy.com"
+                      className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 text-xl"
+                    >
+                      <span className="text-gray-800 font-bold text-xl flex gap-3">
+                        Email: 
+                        <span className="text-xl font-normal text-gray-700">
+                           contactus@yiieldy.com
+                        </span>
+                      </span>
+                    </a>
                   </li>
                 </ul>
-                <p>By using our services, you consent to the terms outlined in this Privacy Policy.</p>
+                <p>
+                  By using our services, you consent to the terms outlined in
+                  this Privacy Policy.
+                </p>
               </div>
             </div>
           </div>

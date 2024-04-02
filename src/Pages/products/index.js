@@ -1,1 +1,1 @@
-export { default as Kaji } from './Kaji'
+export { default as FiidzApp } from './FiidzApp'

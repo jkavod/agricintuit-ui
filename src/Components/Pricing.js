@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../UI/Style.css'
+import "../UI/Style.css";
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(true);
@@ -28,7 +28,6 @@ export default function Pricing() {
               aria-pressed={isAnnual}
             >
               Monthly
-              
             </button>
             <button
               className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${
@@ -43,7 +42,7 @@ export default function Pricing() {
                   isAnnual ? "text-black" : "text-white dark:text-white"
                 }
               >
-                -20%
+                -12%
               </span>
             </button>
           </div>
@@ -55,17 +54,17 @@ export default function Pricing() {
             <div className="relative flex flex-col h-full p-6 rounded-2xl bg-white dark:bg-gray-100 border border-slate-200 dark:border-gray-100 shadow-lg shadow-slate-950/5">
               <div className="mb-5">
                 <div className="text-black dark:black font-semibold mb-1">
-                  <h1 className="text-2xl">Basic</h1>
+                  <h1 className="text-2xl">Poultry Basic</h1>
                   <p className="text-sm font-normal">
-                    Either Livestock farmer or Crop Growers
+                    Specifically for poultry farmers with fewer than 200 birds
                   </p>
                 </div>
                 <div className="inline-flex items-baseline mb-2">
                   <span className="text-black dark:black font-bold text-3xl">
-                    $
+                    N
                   </span>
                   <span className="text-black dark:black font-bold text-4xl">
-                    {isAnnual ? "20" : "200"}
+                    {isAnnual ? "1000" : "10,560"}
                   </span>
                   <span className="text-black font-medium">/mo</span>
                 </div>
@@ -108,7 +107,7 @@ export default function Pricing() {
                   </svg>
                   <span>
                     One comprehensive platform to plan, track, and manage your
-                    agriculture or livestock business efficiently.
+                    poultry business efficiently.
                   </span>
                 </li>
                 <li className="flex items-center">
@@ -119,7 +118,20 @@ export default function Pricing() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Inventory tracking and management.</span>
+                  <span>
+                    Built-in animal growth and productivity intelligence for
+                    feed/bird performance
+                  </span>
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns=""
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Feed Calculator</span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -131,6 +143,16 @@ export default function Pricing() {
                   </svg>
                   <span>Limited support</span>
                 </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns=""
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>99.9% platform availability</span>
+                </li>
                 {/* <li className="flex items-center">
                   <svg
                     className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
@@ -141,7 +163,7 @@ export default function Pricing() {
                   </svg>
                   <span>Sensors and animal tags are not included.</span>
                 </li> */}
-                <li className="flex items-center">
+                {/* <li className="flex items-center">
                   <svg
                     className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
                     viewBox="0 0 12 12"
@@ -162,7 +184,7 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>99.9% platform availability</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -356,19 +378,20 @@ export default function Pricing() {
                 </div>
                 <div className="text-black dark:black font-semibold mb-1">
                   <h1 className="text-2xl">Standard</h1>
-                  <p className="text-sm font-normal">Livestock</p>
+                  <p className="text-sm font-normal">
+                    A complete productivity platform for management of birds
+                  </p>
                 </div>
                 <div className="inline-flex items-baseline mb-2">
                   <span className="text-black dark:black font-bold text-3xl">
-                    $
+                    N
                   </span>
                   <span className="text-black dark:black font-bold text-4xl">
-                    {isAnnual ? "79" : "900"}
+                    {isAnnual ? "7,500" : "79,200"}
                   </span>
                   <span className="text-black font-medium">/mo</span>
                 </div>
 
-               
                 <a
                   className="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
                   href="#0"
@@ -388,46 +411,6 @@ export default function Pricing() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>A complete farm platform for management of livestock and herds.</span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Animal health and treatment.</span>
-                </li>
-                {/* <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Remote monitoring.</span>
-                </li> */}
-                {/* <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Geographical mapping.</span>
-                </li> */}
-                <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
                   <span>Inventory tracking and management.</span>
                 </li>
                 <li className="flex items-center">
@@ -438,7 +421,7 @@ export default function Pricing() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Tasks, timelines and reminders.</span>
+                  <span>Built-in animal growth and productivity intelligence for feed/bird performance</span>
                 </li>
                 {/* <li className="flex items-center">
                   <svg
@@ -458,6 +441,28 @@ export default function Pricing() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
+                  <span>AI assistant (knowledgeable Staff).</span>
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns=""
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>
+                  Veterinary and contact information.
+                  </span>
+                </li>
+                <li className="flex items-center">
+                  <svg
+                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
+                    viewBox="0 0 12 12"
+                    xmlns=""
+                  >
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
                   <span>Farm accounting and financial management.</span>
                 </li>
                 <li className="flex items-center">
@@ -468,7 +473,7 @@ export default function Pricing() {
                   >
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Inventory, maintenance, and service records for equipment or farm assets.</span>
+                  <span>Feed Calculator</span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -479,26 +484,6 @@ export default function Pricing() {
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Dedicated support.</span>
-                </li>
-                {/* <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Sensors and animal tags are not included.</span>
-                </li> */}
-                <li className="flex items-center">
-                  <svg
-                    className="w-3 h-3 fill-emerald-500 mr-3 shrink-0"
-                    viewBox="0 0 12 12"
-                    xmlns=""
-                  >
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Online and offline farm record keeping that is secure.</span>
                 </li>
                 <li className="flex items-center">
                   <svg

@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Nav } from "../UI";
+import { Footer, Header, Nav } from "../UI";
 import {
   AiPriceActions,
   AppleButton,
@@ -26,6 +26,7 @@ export default function Home() {
     <>
       <div>
         <Nav />
+        <Header />
 
         {/* Hero - Section */}
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-40">
@@ -36,7 +37,8 @@ export default function Home() {
                   {/* Stay ahead of the soaring costs of poultry feed with the Kaji
                   App */}
                   {/* Stay ahead of the soaring costs of poultry feed with the Yiieldy Fiidz App */}
-                  Reduce your poultry feed costs by 40% with the Yiieldy Fiidz App
+                  Reduce your poultry feed costs by 40% with the Yiieldy Fiidz
+                  App
                 </h2>
                 {/* <p className="text-gray-700 text-base md:text-lg">
                   Yiieldy Fiidz helps you reduce feed costs, improve feed efficiency,
@@ -71,7 +73,25 @@ export default function Home() {
                   />
                   </a>
                 </div> */}
-              <Waitlist />
+              {/* <Waitlist /> */}
+              <div className="flex items-center space-x-3">
+                <a
+                  href="/"
+                  className="w-32 transition duration-300 hover:shadow-lg"
+                >
+                  <img
+                    src={GoogleButton}
+                    className="object-cover object-top w-full h-auto mx-auto rounded-2xl"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="/"
+                  className="w-32 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
             <div className="flex items-center lg:justify-end lg:w-1/2 justify-center">
               <div className="w-2/5">
@@ -99,6 +119,29 @@ export default function Home() {
           </a>
         </div>
 
+        {/* Fiidz App AI */}
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
+          <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
+            <div className="lg:pr-10">
+              <h5 className="mb-4 text-4xl font-extrabold leading-none">
+                Fiidz App AI
+              </h5>
+              <p className="mb-6 text-gray-900">Lorem</p>
+              <div>
+                <button className="w-40 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold">Start A Free Trail</button>
+              </div>
+            </div>
+            <div>
+              <iframe
+                className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
+                src="https://www.youtube.com/embed/uvyLjnt2lHs"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
         {/* Features Section */}
         <div className="features-sec" id="features-section">
           <div className="">
@@ -106,10 +149,10 @@ export default function Home() {
               <h1 className="text-center font-bold text-4xl">
                 Awesome Features
               </h1>
-              {/* <p className="text-center text-2xl font-semibold text-gray-700">
+              <p className="text-center text-2xl font-semibold text-gray-700">
                 Kaji: Empowering farmers with precision tech, health insights,
                 and financial mastery.
-              </p> */}
+              </p>
               <div className="flex justify-center items-center mb-20">
                 <hr className="bg-green h-1 w-20 rounded-sm" />
               </div>
@@ -235,12 +278,12 @@ export default function Home() {
         </div>
 
         {/* Download Section */}
-        <div className="lg:mt-20">
+        {/* <div className="lg:mt-20">
           <Download />
-        </div>
+        </div> */}
 
         {/* Trusted Company */}
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
               Trusted by the world’s most innovative teams

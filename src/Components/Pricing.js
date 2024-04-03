@@ -64,7 +64,7 @@ export default function Pricing() {
                     N
                   </span>
                   <span className="text-black dark:black font-bold text-4xl">
-                    {isAnnual ? "1000" : "10,560"}
+                    {isAnnual ? "1,000" : "10,560"}
                   </span>
                   <span className="text-black font-medium">/mo</span>
                 </div>
@@ -74,9 +74,9 @@ export default function Pricing() {
                 </div> */}
                 <a
                   className="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
-                  href="#0"
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                 >
-                  Purchase Plan
+                  Get App
                 </a>
               </div>
               <div className="text-black dark:black font-medium mb-3">
@@ -394,9 +394,9 @@ export default function Pricing() {
 
                 <a
                   className="w-full inline-flex justify-center whitespace-nowrap rounded-lg bg-green px-3.5 py-2.5 text-sm font-medium text-white shadow-sm shadow-indigo-950/10 hover:bg-greenShade focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150"
-                  href="#0"
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                 >
-                  Purchase Plan
+                  Get App
                 </a>
               </div>
               <div className="text-black dark:black font-medium mb-3">

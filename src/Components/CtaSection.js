@@ -47,8 +47,7 @@ export default function CtaSection() {
            </div> */}
             {/* <h6 className="mb-2 font-semibold leading-5">Soil Health Simplified</h6> */}
             <p className="mb-3 text-sm text-gray-900">
-              Instead of lowering stock sizes, closing farms, or switching to
-              cheaper feed options, Kaji can assist you.
+              Monitoring your poultry's feed consumption and gain real-time insight into the feed conversion ratio and the cost per kilogram of meat or eggs.
             </p>
           </div>
         </div>
@@ -71,7 +70,7 @@ export default function CtaSection() {
            </div> */}
             {/* <h6 className="mb-2 font-semibold leading-5">Financial Farming</h6> */}
             <p className="mb-3 text-sm text-gray-900">
-              Kaji brings AI assistance to poultry farmers.
+              Easily estimate the quantity of feed required and associated costs to sustain your birds from the day they hatch until the end of their production cycle.
             </p>
           </div>
         </div>

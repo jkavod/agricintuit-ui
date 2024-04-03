@@ -6,6 +6,7 @@ import {
   Ecoregions,
   FinancialManagement,
   GoogleButton,
+  GooglePlay,
   HealthInsights,
   HerdsManagement,
   Mockup,
@@ -14,6 +15,7 @@ import {
 } from "../Assets";
 import { StaticButton, Waitlist } from "../Constants";
 import { CtaSection, Download, Pricing } from "../Components";
+import { Link } from "react-router-dom";
 
 const shapedBorderStyle = {
   borderRadius: "50%",
@@ -76,21 +78,18 @@ export default function Home() {
               {/* <Waitlist /> */}
               <div className="flex items-center space-x-3">
                 <a
-                  href="/"
-                  className="w-32 transition duration-300 hover:shadow-lg"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                 >
-                  <img
-                    src={GoogleButton}
-                    className="object-cover object-top w-full h-auto mx-auto rounded-2xl"
-                    alt=""
-                  />
+                  <img src={GooglePlay} className="w-5" />
+                  Play Store
                 </a>
-                <a
-                  href="/"
+                <Link
+                  to={"/fiidzapp"}
                   className="w-32 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex items-center lg:justify-end lg:w-1/2 justify-center">
@@ -124,17 +123,33 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
             <div className="lg:pr-10">
               <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                Fiidz App AI
+                The Yiieldy FiidzApp AI Staff provides AI assitance to poultry
+                farmers.
               </h5>
-              <p className="mb-6 text-gray-900">Lorem</p>
-              <div>
-                <button className="w-40 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold">Start A Free Trail</button>
+              <p className="mb-6 text-gray-900">
+                This video shows its capabilities and how essential it is to
+                poultry farmers
+              </p>
+              <div className="flex gap-5 items-center">
+                <a
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                >
+                  <img src={GooglePlay} className="w-5" />
+                  Play Store
+                </a>
+                <Link
+                  to={"/fiidzapp"}
+                  className="w-40 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
+                >
+                  Try For Free
+                </Link>
               </div>
             </div>
             <div>
               <iframe
                 className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
-                src="https://www.youtube.com/embed/uvyLjnt2lHs"
+                src="https://www.youtube.com/watch?v=uvyLjnt2lHs"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
@@ -143,7 +158,7 @@ export default function Home() {
         </div>
 
         {/* Features Section */}
-        <div className="features-sec" id="features-section">
+        {/* <div className="features-sec" id="features-section">
           <div className="">
             <div className="flex flex-col gap-4">
               <h1 className="text-center font-bold text-4xl">
@@ -232,7 +247,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/*  */}
         {/* <div className="bg-gray-700">

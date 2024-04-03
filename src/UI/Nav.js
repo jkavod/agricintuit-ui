@@ -53,7 +53,7 @@ export default function Nav() {
               >
                 Product
                 {isProductDropdownOpen && (
-                  <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                  <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-10">
                     <Link
                       to={"/fiidzapp"}
                       className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 transition-colors duration-200 underln"
@@ -72,7 +72,7 @@ export default function Nav() {
               >
                 Resources
                 {isResourcesDropdownOpen && (
-                  <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                  <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-10">
                     <a
                       href="https://help.yiieldy.com/"
                       target="_blank"
@@ -219,7 +219,7 @@ export default function Nav() {
                         >
                           Product
                           {isProductDropdownOpen && (
-                            <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                            <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-10 z-50">
                               <Link
                                 to={"/fiidzapp"}
                                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 transition-colors duration-200 underln"
@@ -238,7 +238,7 @@ export default function Nav() {
                         >
                           Resources
                           {isResourcesDropdownOpen && (
-                            <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-20">
+                            <div className="absolute top-full left-0 bg-white border rounded-md shadow-md w-44 h-10 z-50">
                               <Link
                                 to={"/kaji"}
                                 className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200 transition-colors duration-200 underln"

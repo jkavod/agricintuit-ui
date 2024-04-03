@@ -5,6 +5,7 @@ import {
   AppleButton,
   FinancialManagement,
   GoogleButton,
+  GooglePlay,
   HealthInsights,
   HerdsManagement,
   Mockup,
@@ -13,6 +14,7 @@ import {
 } from "../../Assets";
 import { StaticButton } from "../../Constants";
 import { CtaSection, Pricing } from "../../Components";
+import { Link } from "react-router-dom";
 
 const shapedBorderStyle = {
   borderRadius: "50%",
@@ -32,13 +34,12 @@ export default function FiidzApp() {
             <div className="mb-16 lg:mb-0 lg:max-w-7xl lg:pr-5">
               <div className="max-w-xl mb-6">
                 <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w- mb-6 mt-10 lg:mt-0">
-                  Stay ahead of the soaring costs of poultry feed with the Fiidz
-                  App
+                  Feed Smarter, Grow Stronger: Unlock Efficiency and Savings in
+                  Poultry Farming
                 </h2>
                 <p className="text-gray-700 text-base md:text-lg">
-                  Fiidz App helps you reduce feed costs, improve feed efficiency,
-                  and enhance poultry performance. Download Fiidz today and
-                  discover the smartest way to feed your poultry.
+                  Data-Driven Insights for Poultry Success: Optimize Feed
+                  Efficiency and Boost Profits
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -53,14 +54,11 @@ export default function FiidzApp() {
                   />
                 </a> */}
                 <a
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
-                  className="w-32 transition duration-300 hover:shadow-lg"
                 >
-                  <img
-                    src={GoogleButton}
-                    className="object-cover object-top w-full h-auto mx-auto rounded-2xl"
-                    alt=""
-                  />
+                  <img src={GooglePlay} className="w-5" />
+                  Play Store
                 </a>
               </div>
             </div>
@@ -90,32 +88,29 @@ export default function FiidzApp() {
           </a>
         </div>
 
-         {/* Fiidz App AI */}
-         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
-          <div className="grid gap-10 lg:grid-cols-2 justify-start items-center">
-            <div className="lg:pr-10">
-              <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                Fiidz App AI
-              </h5>
-              <p className="mb-6 text-gray-900">Lorem</p>
-              <a
-                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
-                  className="w-32 transition duration-300 hover:shadow-lg"
-                >
-                  <img
-                    src={GoogleButton}
-                    className="object-cover object-top w-32 h-auto rounded-2xl"
-                    alt=""
-                  />
-                </a>
-            </div>
+        {/* Fiidz App AI */}
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
+          <div className="grid grid-cols-1 gap-5 items-center">
             <div>
               <iframe
-                className="object-cover w-full h-80 rounded shadow-lg sm:h-96"
-                src="https://www.youtube.com/embed/uvyLjnt2lHs"
+                className="object-cover w-full h-[700px] rounded shadow-lg"
+                src="https://www.youtube.com/watch?v=QcMSfO2MVmc"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
+            </div>
+            <div className="flex flex-col justify-center w-full items-center">
+              <h5 className="mb-4 text-4xl font-extrabold leading-none text-center">
+                Start Optimising Your Poultry Farm Today
+              </h5>
+              {/* <p className="mb-6 text-gray-900">Lorem</p> */}
+              <a
+                className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+              >
+                <img src={GooglePlay} className="w-5" />
+                Play Store
+              </a>
             </div>
           </div>
         </div>
@@ -182,14 +177,12 @@ export default function FiidzApp() {
                         className="w-5 h-5"
                       />
                     </div>
-                    <h1 className="text-2xl">
-                      AI assistant (knowledgeable Staff)
-                    </h1>
+                    <h1 className="text-2xl">AI Staff</h1>
                     <p className="text-start text-sm w-[250px]">
-                      Fiidz app brings AI assistant to poultry farmers, a crucial
-                      tool that has the potential to revolutionize the way we
-                      work in our poultry farms. It harnesses the power of
-                      artificial intelligence (AI) to provide real-time
+                      Fiidz app brings AI assistant to poultry farmers, a
+                      crucial tool that has the potential to revolutionize the
+                      way we work in our poultry farms. It harnesses the power
+                      of artificial intelligence (AI) to provide real-time
                       assistance, automate tasks, and facilitate knowledge
                       sharing.
                     </p>
@@ -238,7 +231,6 @@ export default function FiidzApp() {
           </div>
         </div> */}
 
-
         {/* Pricing */}
         <div id="pricing-section">
           <div className="mb-10 flex flex-col gap-3">
@@ -256,7 +248,7 @@ export default function FiidzApp() {
           <Pricing />
         </div>
 
-         {/* CTA Section */}
+        {/* CTA Section */}
         <div>
           <div className="flex flex-col justify-center items-center mt-20 gap-3">
             <h1 className="text-4xl font-bold text-center">Quick Overview</h1>
@@ -267,6 +259,44 @@ export default function FiidzApp() {
             <div className="bg-green h-1 w-20 rounded-sm"></div>
           </div>
           <CtaSection />
+        </div>
+
+        {/* Fiidz App AI */}
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
+          <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
+            <div>
+              <iframe
+                className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
+                src="https://www.youtube.com/watch?v=yYRalATfy2I&feature=youtu.be"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div className="lg:pr-10">
+              <h5 className="mb-4 text-4xl font-extrabold leading-none">
+                Get Started With Fiidz App
+              </h5>
+              {/* <p className="mb-6 text-gray-900">
+                This video shows its capabilities and how essential it is to
+                poultry farmers
+              </p> */}
+              <div className="flex gap-5 items-center">
+                <a
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                >
+                  <img src={GooglePlay} className="w-5" />
+                  Play Store
+                </a>
+                <a
+                  href="https://help.yiieldy.com"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}

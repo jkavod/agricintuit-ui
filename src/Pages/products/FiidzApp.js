@@ -54,7 +54,7 @@ export default function FiidzApp() {
                     alt=""
                   />
                 </a> */}
-                <a
+                {/* <a
                   className="w-55 transition duration-300 hover:shadow-lg bg-white border-green border px-3 py-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                   target="_blank"
@@ -64,6 +64,13 @@ export default function FiidzApp() {
                     <p>Download from</p>
                     <p>Play Store</p>
                   </div>
+                </a> */}
+                 <a
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
+                >
+                  Try For Free
                 </a>
               </div>
             </div>
@@ -97,7 +104,7 @@ export default function FiidzApp() {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 gap-5 items-center">
             <div className="flex flex-col justify-center w-full items-center">
-              <h5 className="mb-4 text-4xl font-extrabold leading-none text-center">
+              <h5 className="mb-4 text-4xl font-bold leading-none text-center">
                 Start Optimising Your Poultry Farm Today
               </h5>
               {/* <p className="mb-6 text-gray-900">Lorem</p> */}
@@ -278,7 +285,7 @@ export default function FiidzApp() {
               ></iframe>
             </div>
             <div className="lg:pr-10">
-              <h5 className="mb-4 text-4xl font-extrabold leading-none">
+              <h5 className="mb-4 text-4xl font-bold leading-none">
                 Get Started With Fiidz App
               </h5>
               {/* <p className="mb-6 text-gray-900">
@@ -286,12 +293,19 @@ export default function FiidzApp() {
                 poultry farmers
               </p> */}
               <div className="flex gap-5 items-center">
-                <a
+                {/* <a
                   className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                 >
                   <img src={GooglePlay} className="w-5" />
                   Play Store
+                </a> */}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
+                >
+                  Try For Free
                 </a>
                 <a
                   href="https://help.yiieldy.com"

@@ -51,8 +51,7 @@ export default function Home() {
                 </p> */}
                 <p className="text-gray-700 text-base md:text-lg">
                   Yiieldy Fiidz helps you reduce feed costs, improve feed
-                  efficiency, and enhance poultry performance, Join the
-                  waitlist.
+                  efficiency, and enhance poultry performance.
                 </p>
               </div>
               {/* <div className="flex items-center space-x-3">
@@ -79,7 +78,7 @@ export default function Home() {
                 </div> */}
               {/* <Waitlist /> */}
               <div className="flex gap-5 items-center">
-                <a
+                {/* <a
                   className="w-55 transition duration-300 hover:shadow-lg bg-white border-green border px-3 py-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                   target="_blank"
@@ -89,12 +88,19 @@ export default function Home() {
                     <p>Download from</p>
                     <p>Play Store</p>
                   </div>
-                </a>
-                <Link
-                  to={"/fiidzapp"}
-                  className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
+                </a> */}
+                 <a
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
                 >
                   Try For Free
+                </a>
+                <Link
+                  to={'/fiidzapp'}
+                  className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
+                >
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -127,7 +133,7 @@ export default function Home() {
         {/* Fiidz App AI */}
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
-          <div>
+            <div>
               <iframe
                 className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
                 src="https://www.youtube.com/watch?v=uvyLjnt2lHs"
@@ -137,7 +143,7 @@ export default function Home() {
             </div>
             <div className="lg:pr-10">
               <h5 className="mb-4 text-4xl leading-none">
-                The Yiieldy FiidzApp AI Staff provides AI assitance to poultry
+                Fiidz App <span className="font-bold">AI Staff</span> provides AI assitance to poultry
                 farmers.
               </h5>
               <p className="mb-6 text-gray-900">
@@ -156,15 +162,15 @@ export default function Home() {
                     <p>Play Store</p>
                   </div>
                 </a> */}
-                <Link
-                  to={"/fiidzapp"}
-                  className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
+                 <a
+                  href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
                 >
                   Try For Free
-                </Link>
+                </a>
               </div>
             </div>
-            
           </div>
         </div>
 

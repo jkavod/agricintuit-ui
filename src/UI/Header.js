@@ -101,7 +101,7 @@ export default function Header() {
             Yiieldy - Agriculture, AI, and Sustainability
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-            Yiieldy offers a complete agricultural services platform, including crop and livestock growth monitoring and harvesting.
+            Yiieldy offers a complete agricultural services platform.
             </p>
             {/* <div className="mt-10 flex items-center justify-center gap-x-6">
               <a

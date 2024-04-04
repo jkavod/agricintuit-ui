@@ -10,6 +10,7 @@ import {
   HerdsManagement,
   Mockup,
   MockupB,
+  MockupC,
   SplashA,
 } from "../../Assets";
 import { StaticButton } from "../../Constants";
@@ -54,17 +55,21 @@ export default function FiidzApp() {
                   />
                 </a> */}
                 <a
-                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                  className="w-55 transition duration-300 hover:shadow-lg bg-white border-green border px-3 py-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
                 >
                   <img src={GooglePlay} className="w-5" />
-                  Play Store
+                  <div className="flex flex-col text-[12px] text-left">
+                    <p>Download from</p>
+                    <p>Play Store</p>
+                  </div>
                 </a>
               </div>
             </div>
-            <div className="flex items-center lg:justify-end justify-center lg:w-1/2">
+            <div className="flex items-center lg:justify-end lg:w-1/2 justify-center">
               <div className="w-2/5">
-                <img className="object-cover" src={Mockup} alt="" />
+                <img className="object-cover" src={MockupC} alt="" />
               </div>
               <div className="w-5/12 -ml-16 lg:-ml-32">
                 <img className="object-cover" src={MockupB} alt="" />
@@ -91,6 +96,19 @@ export default function FiidzApp() {
         {/* Fiidz App AI */}
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid grid-cols-1 gap-5 items-center">
+            <div className="flex flex-col justify-center w-full items-center">
+              <h5 className="mb-4 text-4xl font-extrabold leading-none text-center">
+                Start Optimising Your Poultry Farm Today
+              </h5>
+              {/* <p className="mb-6 text-gray-900">Lorem</p> */}
+              {/* <a
+                className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+              >
+                <img src={GooglePlay} className="w-5" />
+                Play Store
+              </a> */}
+            </div>
             <div>
               <iframe
                 className="object-cover w-full h-[700px] rounded shadow-lg"
@@ -98,19 +116,6 @@ export default function FiidzApp() {
                 frameborder="0"
                 allowfullscreen
               ></iframe>
-            </div>
-            <div className="flex flex-col justify-center w-full items-center">
-              <h5 className="mb-4 text-4xl font-extrabold leading-none text-center">
-                Start Optimising Your Poultry Farm Today
-              </h5>
-              {/* <p className="mb-6 text-gray-900">Lorem</p> */}
-              <a
-                className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
-                href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
-              >
-                <img src={GooglePlay} className="w-5" />
-                Play Store
-              </a>
             </div>
           </div>
         </div>
@@ -137,7 +142,7 @@ export default function FiidzApp() {
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img src={AiPriceActions} alt="" className="w-5 h-5" />
                     </div>
-                    <h1 className="text-2xl">
+                    <h1 className="text-2xl w-[300px] text-right">
                       Feed quality and usage optimization.
                     </h1>
                     <p className="text-end text-sm w-[250px]">
@@ -153,7 +158,7 @@ export default function FiidzApp() {
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img src={HealthInsights} alt="" className="w-5 h-5" />
                     </div>
-                    <h1 className="text-2xl">
+                    <h1 className="text-2xl w-[300px] text-right">
                       Feed formulation/nutrient control
                     </h1>
                     <p className="text-end text-sm w-[250px]">
@@ -168,7 +173,7 @@ export default function FiidzApp() {
                 <div className="AppImg flex justify-center">
                   <img src={Mockup} alt="" className="w-[300px]" />
                 </div>
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-40">
                   <div className="flex flex-col items-start gap-4 feat-div">
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img
@@ -177,7 +182,7 @@ export default function FiidzApp() {
                         className="w-5 h-5"
                       />
                     </div>
-                    <h1 className="text-2xl">AI Staff</h1>
+                    <h1 className="text-2xl w-[300px]">AI Staff</h1>
                     <p className="text-start text-sm w-[250px]">
                       Fiidz app brings AI assistant to poultry farmers, a
                       crucial tool that has the potential to revolutionize the
@@ -191,7 +196,7 @@ export default function FiidzApp() {
                     <div className="bg-green p-2" style={shapedBorderStyle}>
                       <img src={HerdsManagement} alt="" className="w-5 h-5" />
                     </div>
-                    <h1 className="text-2xl">Herds Management</h1>
+                    <h1 className="text-2xl w-[300px]">Herds Management</h1>
                     <p className="text-start text-sm w-[250px]">
                       Fiidz's monitoring systems provide livestock farmers with
                       an efficient solution to manage their herds, enabling them

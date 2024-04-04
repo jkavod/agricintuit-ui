@@ -10,7 +10,9 @@ import {
   HealthInsights,
   HerdsManagement,
   Mockup,
+  MockupA,
   MockupB,
+  MockupC,
   SplashA,
 } from "../Assets";
 import { StaticButton, Waitlist } from "../Constants";
@@ -76,25 +78,29 @@ export default function Home() {
                   </a>
                 </div> */}
               {/* <Waitlist /> */}
-              <div className="flex items-center space-x-3">
+              <div className="flex gap-5 items-center">
                 <a
-                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                  className="w-55 transition duration-300 hover:shadow-lg bg-white border-green border px-3 py-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
                 >
                   <img src={GooglePlay} className="w-5" />
-                  Play Store
+                  <div className="flex flex-col text-[12px] text-left">
+                    <p>Download from</p>
+                    <p>Play Store</p>
+                  </div>
                 </a>
                 <Link
                   to={"/fiidzapp"}
-                  className="w-32 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
                 >
-                  Learn More
+                  Try For Free
                 </Link>
               </div>
             </div>
             <div className="flex items-center lg:justify-end lg:w-1/2 justify-center">
               <div className="w-2/5">
-                <img className="object-cover" src={Mockup} alt="" />
+                <img className="object-cover" src={MockupC} alt="" />
               </div>
               <div className="w-5/12 -ml-16 lg:-ml-32">
                 <img className="object-cover" src={MockupB} alt="" />
@@ -121,8 +127,16 @@ export default function Home() {
         {/* Fiidz App AI */}
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
+          <div>
+              <iframe
+                className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
+                src="https://www.youtube.com/watch?v=uvyLjnt2lHs"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
             <div className="lg:pr-10">
-              <h5 className="mb-4 text-4xl font-extrabold leading-none">
+              <h5 className="mb-4 text-4xl leading-none">
                 The Yiieldy FiidzApp AI Staff provides AI assitance to poultry
                 farmers.
               </h5>
@@ -131,29 +145,26 @@ export default function Home() {
                 poultry farmers
               </p>
               <div className="flex gap-5 items-center">
-                <a
-                  className="w-40 transition duration-300 hover:shadow-lg bg-white border-green border p-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
+                {/* <a
+                  className="w-55 transition duration-300 hover:shadow-lg bg-white border-green border px-3 py-3 rounded-md text-center text-green flex justify-center items-center gap-5 font-bold"
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
+                  target="_blank"
                 >
                   <img src={GooglePlay} className="w-5" />
-                  Play Store
-                </a>
+                  <div className="flex flex-col text-[12px] text-left">
+                    <p>Download from</p>
+                    <p>Play Store</p>
+                  </div>
+                </a> */}
                 <Link
                   to={"/fiidzapp"}
-                  className="w-40 transition duration-300 hover:shadow-lg bg-green p-3 rounded-md text-center text-white font-bold"
+                  className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
                 >
                   Try For Free
                 </Link>
               </div>
             </div>
-            <div>
-              <iframe
-                className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
-                src="https://www.youtube.com/watch?v=uvyLjnt2lHs"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-            </div>
+            
           </div>
         </div>
 

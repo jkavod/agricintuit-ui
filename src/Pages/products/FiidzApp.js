@@ -65,7 +65,7 @@ export default function FiidzApp() {
                     <p>Play Store</p>
                   </div>
                 </a> */}
-                 <a
+                <a
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                   target="_blank"
                   className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
@@ -118,8 +118,8 @@ export default function FiidzApp() {
             </div>
             <div>
               <iframe
-                className="object-cover w-full h-[700px] rounded shadow-lg"
-                src="https://www.youtube.com/watch?v=QcMSfO2MVmc"
+                class="object-cover w-full h-[700px] rounded shadow-lg"
+                src="https://www.youtube.com/embed/QcMSfO2MVmc"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
@@ -279,7 +279,7 @@ export default function FiidzApp() {
             <div>
               <iframe
                 className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
-                src="https://www.youtube.com/watch?v=yYRalATfy2I&feature=youtu.be"
+                src="https://www.youtube.com/embed/yYRalATfy2I"
                 frameborder="0"
                 allowfullscreen
               ></iframe>

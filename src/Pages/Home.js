@@ -89,7 +89,7 @@ export default function Home() {
                     <p>Play Store</p>
                   </div>
                 </a> */}
-                 <a
+                <a
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                   target="_blank"
                   className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"
@@ -97,7 +97,7 @@ export default function Home() {
                   Try For Free
                 </a>
                 <Link
-                  to={'/fiidzapp'}
+                  to={"/fiidzapp"}
                   className="w-40 transition duration-300 hover:shadow-lg bg-green px-3 py-[1.2rem] rounded-md text-center text-white font-bold"
                 >
                   Learn More
@@ -135,16 +135,16 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-2 justify-center items-center">
             <div>
               <iframe
-                className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
-                src="https://www.youtube.com/watch?v=uvyLjnt2lHs"
+                class="object-cover w-full h-96 rounded shadow-lg sm:h-96"
+                src="https://www.youtube.com/embed/uvyLjnt2lHs"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
             </div>
             <div className="lg:pr-10">
               <h5 className="mb-4 text-4xl leading-none">
-                Fiidz App <span className="font-bold">AI Staff</span> provides AI assitance to poultry
-                farmers.
+                Fiidz App <span className="font-bold">AI Staff</span> provides
+                AI assitance to poultry farmers.
               </h5>
               <p className="mb-6 text-gray-900">
                 This video shows its capabilities and how essential it is to
@@ -162,7 +162,7 @@ export default function Home() {
                     <p>Play Store</p>
                   </div>
                 </a> */}
-                 <a
+                <a
                   href="https://play.google.com/store/apps/details?id=com.yiieldy.fiidzapp"
                   target="_blank"
                   className="w-40 transition duration-300 hover:shadow-lg bg-white border border-green p-3 rounded-md text-center text-green font-bold"

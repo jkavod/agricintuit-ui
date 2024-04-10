@@ -131,14 +131,14 @@ export default function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                {/* <li>
-                  <a
-                    href="/"
+                <li>
+                  <Link
+                    to={"/career"}
                     className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >
-                    Customers
-                  </a>
-                </li> */}
+                    Career
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="w-full">

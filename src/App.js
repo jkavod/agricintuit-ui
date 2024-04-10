@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { About, Contact, FAQS, Home, Privacy, Terms } from "./Pages";
+import { About, Career, Contact, FAQS, Home, Privacy, Terms } from "./Pages";
 import { FiidzApp, Kaji } from "./Pages/products";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/fiidzapp" element={<FiidzApp />} />
+          <Route path="/career" element={<Career />} />
         </Routes>
       </div>
     </Router>

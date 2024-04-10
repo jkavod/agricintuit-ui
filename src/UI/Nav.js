@@ -95,6 +95,18 @@ export default function Nav() {
                 Contact
               </Link>
             </li>
+            
+            <li className="underln">
+              <Link
+                to={"/career"}
+                aria-label="career"
+                title="career"
+                className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Career
+              </Link>
+            </li>
+            
             {/* <li className="underln">
               <a
                 href="/#support-section"
@@ -257,6 +269,16 @@ export default function Nav() {
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Contact
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to={"/career"}
+                          aria-label="career"
+                          title="career"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Career
                         </Link>
                       </li>
                       {/* <li>

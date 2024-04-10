@@ -79,7 +79,7 @@ export default function Career() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
@@ -92,7 +92,7 @@ export default function Career() {
                   >
                     Sign Up
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </Dialog.Panel>
@@ -120,7 +120,7 @@ export default function Career() {
               Positions at Yiieldy
             </p>
             <a
-              href="#contact"
+              href="#career"
               aria-label="Scroll down"
               className="flex items-center justify-center w-10 h-10 mx-auto text-green duration-300 transform border border-green rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
             >
@@ -138,9 +138,11 @@ export default function Career() {
       </div>
 
       {/* Job */}
-      <section className="px-20">
+      <section className="px-20" id="career">
         <div className="flex flex-col gap-4 py-20">
-          <h1 className="text-[30px] font-bold">Business Development Executive</h1>
+          <h1 className="text-[30px] font-bold">
+            Business Development Executive
+          </h1>
           <p className="text-md text-justify">
             We are looking for an ambitious and energetic Business Development
             Manager to help us expand our clientele. You will be the front of
@@ -154,21 +156,27 @@ export default function Career() {
 
           <div className="flex flex-col gap-3">
             <h1 className="text-[25px] font-bold">Responsibilities</h1>
-            <ul className="list-disc flex flex-col gap-2">
+            <ul className="list-disc flex flex-col gap-2 ml-6">
               <li className="text-md">
                 Develop a growth strategy focused both on financial gain and
                 customer satisfaction
               </li>
-              <li className="text-md"> 
+              <li className="text-md">
                 Conduct research to identify new markets and customer needs
               </li>
-              <li className="text-md">Arrange business meetings with prospective clients</li>
+              <li className="text-md">
+                Arrange business meetings with prospective clients
+              </li>
               <li className="text-md">
                 Promote the company’s products/services addressing or predicting
                 clients’ objectives.
               </li>
-              <li className="text-md">Keep records of sales, revenue, invoices etc.</li>
-              <li className="text-md">Provide trustworthy feedback and after-sales support</li>
+              <li className="text-md">
+                Keep records of sales, revenue, invoices etc.
+              </li>
+              <li className="text-md">
+                Provide trustworthy feedback and after-sales support
+              </li>
               <li className="text-md">
                 Build long-term relationships with new and existing customers.
               </li>
@@ -177,13 +185,15 @@ export default function Career() {
 
           <div className="flex flex-col gap-3">
             <h1 className="text-[25px] font-bold">Requirements and skills</h1>
-            <ul className="list-disc flex flex-col gap-2">
+            <ul className="list-disc flex flex-col gap-2 ml-6">
               <li className="text-md">
                 Proven working experience as a business development manager,
                 sales executive or a relevant role
               </li>
               <li className="text-md">Proven sales track record</li>
-              <li className="text-md">Experience in customer support is a plus</li>
+              <li className="text-md">
+                Experience in customer support is a plus
+              </li>
               <li className="text-md">
                 Proficiency in MS Office and CRM software (e.g. Salesforce,
                 Hubspot)
@@ -193,8 +203,18 @@ export default function Career() {
               <li className="text-md">Communication and negotiation skills</li>
               <li className="text-md">Ability to build rapport</li>
               <li className="text-md">Time management and planning skills</li>
-              <li className="text-md">BSc/BA in business administration, sales, or agriculture</li>
+              <li className="text-md">
+                BSc/BA in business administration, sales, or agriculture
+              </li>
             </ul>
+          </div>
+
+          <div>
+            <h1 className="text-[25px] font-bold">How To Apply</h1>
+            <div className="text-[20px] text-justify">
+            Kinldy mail your CV and Cover letter to <a href="mailto:contactus@yiieldy.com" className="text-green">contactus@yiieldy.com</a>
+            </div>
+            <p className="text-[20px] font-bold text-red-600">Entry Closes on: April 19, 2024</p>
           </div>
         </div>
       </section>

@@ -5,23 +5,23 @@ export default function Testimonial() {
 
   const quotes = [
     {
-      text: "With its easy-to-use interface and streamlined design, recording all the crucial information in one convenient location has never been more effortless.",
-      author: "Ada Mabel",
-      role: "Agropreneur",
-      // imageUrl:
-      //   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    {
-      text: "So far more features than I have used so plenty of room to grow into and with it.",
-      author: "TJ Olubanji",
-      role: "TJ Livestock Ltd",
-      // imageUrl:
-      //   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-    {
-      text: "The Prescient AI Actions feature is an essential component that provides valuable and accurate insights to help make informed decisions. Its advanced capabilities enable me to predict potential outcomes and take proactive measures to achieve better results. Overall, this feature offers a comprehensive solution for me to stay ahead of the competition and achieve long-term success.",
-      author: "Dangi Dangana",
+      text: "Yiieldy Fiidz AI Staff is a game-changer; it is like having a pocket expert ready to provide real-time solutions. It empowers my team with knowledge, improving productivity and profitability. Keep up the great work!",
+      author: "Ekaidem Jeremiah",
       role: "Ecoregions Nigeria",
+      // imageUrl:
+      //   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      text: "Previously, I relied on my intuition to discuss my poultry production. However, since using Yiieldy Fiidz, I have gained invaluable insights into how efficiently my flocks convert feed into weight gain. This has enabled me to make informed decisions about their feeding strategies and boosted my confidence in my poultry management. I am impressed with integrating such a data-driven tool into the app. Fantastic job!",
+      author: "Abu Warlord",
+      role: "Azuri-Green Acres",
+      // imageUrl:
+      //   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      text: "I recently used the Yiieldy Fiidz app's feed calculator to estimate my poultry production. This app makes feed management easier by removing the guesswork, which has helped me save significant money. Its simple and accurate design makes it a must-have for every poultry farmer.",
+      author: "Jacob Odiakosa",
+      role: "Winners Farm Ltd",
       // imageUrl:
       //   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },

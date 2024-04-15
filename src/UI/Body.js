@@ -268,9 +268,9 @@ export default function Body() {
         </div> */}
 
         {/* Testimonials */}
-        {/* <div className="lg:-mt-48 mb-32">
+        <div className="lg:-mt-48 mb-32">
           <Testimonials />
-        </div> */}
+        </div>
 
         {/* Pricing */}
         {/* <div id="pricing-section">

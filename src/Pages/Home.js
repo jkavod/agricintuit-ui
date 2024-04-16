@@ -14,6 +14,7 @@ import {
   MockupB,
   MockupC,
   Nominated,
+  NominatedMp,
   NominatedPic,
   PartnerB,
   SplashA,
@@ -326,11 +327,15 @@ export default function Home() {
           <h1 className="text-4xl capitalize">We got a nomination</h1>
           <div className="lg:flex grid grid-cols-1 px-2 w-full justify-center gap-20 items-center mb-10">
             <img src={NominatedPic} alt="Nominated" className="w-[40rem]" />
-            <video controls className="w-[60rem] lg:h-[40rem] h-[20rem]">
-              {/* <source src={Nominated} type="video/quicktime" /> */}
+            {/* <video controls className="w-[60rem] lg:h-[40rem] h-[20rem]">
               <source src={Nominated} type="video/mov" />
+            </video> */}
+            <video
+              className="w-full lg:h-[40rem] object-contain rounded shadow-lg sm:h-96"
+              controls
+            >
+              <source src={NominatedMp} type="video/mp4" />
             </video>
-            
           </div>
         </div>
 

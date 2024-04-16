@@ -121,7 +121,7 @@ export default function FiidzApp() {
                 class="object-cover w-full h-[700px] rounded shadow-lg"
                 src="https://www.youtube.com/embed/QcMSfO2MVmc"
                 frameborder="0"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function FiidzApp() {
                 className="object-cover w-full h-96 rounded shadow-lg sm:h-96"
                 src="https://www.youtube.com/embed/yYRalATfy2I"
                 frameborder="0"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="lg:pr-10">

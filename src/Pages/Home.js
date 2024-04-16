@@ -14,6 +14,7 @@ import {
   MockupB,
   MockupC,
   Nominated,
+  NominatedPic,
   PartnerB,
   SplashA,
 } from "../Assets";
@@ -140,7 +141,7 @@ export default function Home() {
                 class="object-cover w-full h-96 rounded shadow-lg sm:h-96"
                 src="https://www.youtube.com/embed/uvyLjnt2lHs"
                 frameborder="0"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="lg:pr-10">
@@ -321,13 +322,16 @@ export default function Home() {
           <Testimonials />
         </div>
 
-        <div className="flex w-full justify-center items-center mb-10">
-          <video controls>
-            <source
-              src={Nominated}
-              type="video/quicktime"
-            />
-          </video>
+        <div className="flex flex-col justify-center items-center gap-10 mb-20">
+          <h1 className="text-4xl capitalize">We got a nomination</h1>
+          <div className="lg:flex grid grid-cols-1 px-2 w-full justify-center gap-20 items-center mb-10">
+            <img src={NominatedPic} alt="Nominated" className="w-[40rem]" />
+            <video controls className="w-[60rem] lg:h-[40rem] h-[20rem]">
+              {/* <source src={Nominated} type="video/quicktime" /> */}
+              <source src={Nominated} type="video/mov" />
+            </video>
+            
+          </div>
         </div>
 
         {/* Trusted Company */}
@@ -338,13 +342,13 @@ export default function Home() {
             </h2>
             <div className="flex justify-center items-center">
               <img
-                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                className="w-96 object-contain"
                 //  src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
                 src={Ecoregions}
                 alt="Partners"
               />
               <img
-                className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+                className="w-32"
                 //  src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
                 src={PartnerB}
                 alt="Partners"

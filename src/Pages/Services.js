@@ -139,10 +139,10 @@ export default function Services() {
 
       {/* Services Body Section */}
       <div className="overflow-hidden bg-white" id="services">
-        <div className="px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-7xl lg:px-8 lg:py-20">
+        <div className="px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-7xl lg:px-8 lg:py-20 w-full flex justify-center items-center">
           {/* Free Training */}
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-screen-7xl lg:px-8 lg:py-20">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <div className="px-4 py-16 max-w-xl md:max-w-7xl lg:max-w-screen-full lg:py-20">
+            <div className="grid gap-6 md:grid-cols-2">
               <div className="grid gap-6 md:grid-cols-2 md:col-span-2 lg:col-span-3">
                {/* Free Training */}
                 <div className="rounded lg:p-5 lg:transition lg:duration-300 bg-indigo-50 p-3">
@@ -219,6 +219,7 @@ export default function Services() {
                   </ul>
                 </div>
 
+              </div>
                 {/* Daily Analysis and Insights */}
                 <div className="rounded lg:p-5 lg:transition lg:duration-300 bg-lime-100 p-3">
                   <div className="flex items-center mb-1 text-xl">
@@ -234,8 +235,7 @@ export default function Services() {
                     patterns, health trends, and productivity metrics.
                   </p>
                 </div>
-              </div>
-              <div className="relative md:col-span-2 lg:col-span-2 py-60">
+              <div className="relative md:col-span-2 lg:col-span-2 lg:py-60 py-0">
                 <img
                   className="inset-0 object-cover object-bottom w-full h-full rounded shadow-lg lg:absolute lg:h-full"
                   src={AfricanFarmers}

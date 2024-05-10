@@ -125,6 +125,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
+                    to={"/services"}
+                    className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to={"/contact"}
                     className="transition-colors duration-300 text-gray-800 hover:text-gray-500 hover:text-teal-accent-400 lg:text-xl sm:text-sm"
                   >

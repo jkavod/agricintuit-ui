@@ -87,6 +87,16 @@ export default function Nav() {
 
             <li className="underln">
               <Link
+                to={"/services"}
+                aria-label="Services"
+                title="Services"
+                className="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Services
+              </Link>
+            </li>
+            <li className="underln">
+              <Link
                 to={"/contact"}
                 aria-label="Contact"
                 title="Contact"
@@ -260,6 +270,16 @@ export default function Nav() {
                             </div>
                           )}
                         </div>
+                      </li>
+                      <li>
+                        <Link
+                          to={"/services"}
+                          aria-label="Services"
+                          title="Services"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Services
+                        </Link>
                       </li>
                       <li>
                         <Link
